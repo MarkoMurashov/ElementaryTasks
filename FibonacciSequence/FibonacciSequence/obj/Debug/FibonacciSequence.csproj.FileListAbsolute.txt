@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.exe.config
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.exe
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.pdb
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.exe
+C:\Users\Lenovo\Desktop\FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.pdb
