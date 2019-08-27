@@ -1,0 +1,7 @@
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.exe.config
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.pdb
