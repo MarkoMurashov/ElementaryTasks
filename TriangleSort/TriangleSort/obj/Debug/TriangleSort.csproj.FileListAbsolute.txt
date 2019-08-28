@@ -5,3 +5,6 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug
 C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CoreCompileInputs.cache
 C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.exe
 C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\bin\Debug\Assistant.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CopyComplete

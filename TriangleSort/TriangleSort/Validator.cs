@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Assistant;
 
 namespace TriangleSort
 {
@@ -19,7 +16,7 @@ namespace TriangleSort
             str = str.Replace(".", ",");
             if (!double.TryParse(str, out result))
             {
-                UI.ShowMessage(Settings.INCORRECT_INPUT);
+                UI.ShowMessageWithNewLine(Settings.INCORRECT_INPUT);
             }
 
             return result;
@@ -35,12 +32,12 @@ namespace TriangleSort
             args = UI.ReadData().Split(new char[] { ',', ' ' },StringSplitOptions.RemoveEmptyEntries);
             if (!RightLength(args))
             {
-                UI.ShowMessage(Settings.WRONG_NUMBER_OF_ARGS);
+                UI.ShowMessageWithNewLine(Settings.WRONG_NUMBER_OF_ARGS);
                 return false;
             }
             if (!IsTriangleExist(args[1].ChageToDouble(), args[2].ChageToDouble(), args[3].ChageToDouble()))
             {
-                UI.ShowMessage(Settings.NOT_EXIST);
+                UI.ShowMessageWithNewLine(Settings.NOT_EXIST);
                 return false;
             }
             return true;

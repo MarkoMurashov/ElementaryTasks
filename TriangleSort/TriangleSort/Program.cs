@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Assistant;
 
 namespace TriangleSort
 {
@@ -15,16 +12,16 @@ namespace TriangleSort
             do
             {
                 Helper.AddToSet(myTriangles);
-            } while (Helper.ContinueWork());
+            } while (Assistant.Helper.ContinueWork(Settings.CONTINUATION_STRING));
 
-            UI.ShowMessage(Settings.TITLE);
+            UI.ShowMessageWithNewLine(Settings.TITLE);
 
             foreach (var k in myTriangles)
             {
-                UI.ShowMessage(k.ToString());
+                UI.ShowMessageWithNewLine(k.ToString());
             }
 
-            Helper.Saybye();
+            Assistant.Helper.Saybye();
         }
     }
 }
