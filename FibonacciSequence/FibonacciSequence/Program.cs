@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Assistant;
 
 namespace FibonacciSequence
 {
@@ -16,9 +12,9 @@ namespace FibonacciSequence
             }
             else
             {
-                UI.ShowMessage(Settings.WRONG_NUMBER_OF_ARGS);
+                UI.ShowMessageWithNewLine(Settings.WRONG_NUMBER_OF_ARGS);
             }
-            Helper.Saybye();
+            Assistant.Helper.Saybye();
         }
     }
 }

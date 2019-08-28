@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
+using Assistant;
 
 namespace FibonacciSequence
 {
@@ -27,7 +25,7 @@ namespace FibonacciSequence
                 j += i;
                 i = tmp;
             }
-           UI.ShowMessage(string.Join(", ", answer));
+           UI.ShowMessageWithNewLine(string.Join(", ", answer));
         }
 
         public static void ExchangeValue(ref int first, ref int second)
@@ -36,11 +34,6 @@ namespace FibonacciSequence
             first = second;
             second = tmp;
         }
-
-        public static void Saybye()
-        {
-            UI.ShowMessage(Settings.BYE);
-            UI.ReadData();
-        }
+       
     }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using Assistant;
 
 namespace FibonacciSequence
 {
@@ -13,14 +11,14 @@ namespace FibonacciSequence
             int result;
             if (!int.TryParse(tmp, out result))
             {
-                UI.ShowMessage(Settings.WRONG_DATA);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.WRONG_DATA);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             if (result > 100000)
             {
-                UI.ShowMessage(Settings.BIG);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.BIG);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return result;
@@ -30,8 +28,8 @@ namespace FibonacciSequence
         {
             if(args.Length == 0)
             {
-                UI.ShowMessage(Settings.INSTRUCTION);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.INSTRUCTION);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return args.Length == 2;
