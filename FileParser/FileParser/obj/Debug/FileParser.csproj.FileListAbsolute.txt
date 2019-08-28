@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\FileParser\FileParser\bin\Debug\FileParser.exe.config
+C:\Users\Lenovo\source\repos\FileParser\FileParser\bin\Debug\FileParser.exe
+C:\Users\Lenovo\source\repos\FileParser\FileParser\bin\Debug\FileParser.pdb
+C:\Users\Lenovo\source\repos\FileParser\FileParser\obj\Debug\FileParser.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\FileParser\FileParser\obj\Debug\FileParser.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\FileParser\FileParser\obj\Debug\FileParser.exe
+C:\Users\Lenovo\source\repos\FileParser\FileParser\obj\Debug\FileParser.pdb
+C:\Users\Lenovo\Desktop\FileParser\FileParser\obj\Debug\FileParser.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\FileParser\FileParser\obj\Debug\FileParser.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\FileParser\FileParser\obj\Debug\FileParser.exe
+C:\Users\Lenovo\Desktop\FileParser\FileParser\obj\Debug\FileParser.pdb
+C:\Users\Lenovo\Desktop\FileParser\FileParser\bin\Debug\FileParser.exe.config
+C:\Users\Lenovo\Desktop\FileParser\FileParser\bin\Debug\FileParser.exe
+C:\Users\Lenovo\Desktop\FileParser\FileParser\bin\Debug\FileParser.pdb
