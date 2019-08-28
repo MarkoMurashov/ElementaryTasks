@@ -5,3 +5,6 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.cspr
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CoreCompileInputs.cache
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.exe
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CopyComplete

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boards
+namespace Assistant
 {
-    static class UI
+    public class UI
     {
         public static void ShowMessageWithNewLine(string str = "")
         {
