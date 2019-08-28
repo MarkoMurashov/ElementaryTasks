@@ -1,0 +1,7 @@
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\bin\Debug\TriangleSort.exe.config
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\bin\Debug\TriangleSort.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\bin\Debug\TriangleSort.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\TriangleSort\TriangleSort\obj\Debug\TriangleSort.pdb
