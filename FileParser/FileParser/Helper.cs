@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 
+using Assistant;
+
 namespace FileParser
 {
     class Helper
@@ -38,7 +40,7 @@ namespace FileParser
                     }
 
                 }
-                UI.ShowMessage(Settings.DONE);
+                UI.ShowMessageWithNewLine(Settings.DONE);
             }
             else
             {
@@ -50,18 +52,13 @@ namespace FileParser
         {
             if (answer > 0)
             {
-                UI.ShowMessage(answer.ToString());
+                UI.ShowMessageWithNewLine(answer.ToString() + Settings.MATCH);
             }
             else
             {
-                UI.ShowMessage(Settings.NO_MATCH);               
+                UI.ShowMessageWithNewLine(Settings.NO_MATCH);               
             }
         }
 
-        public static void Saybye()
-        {
-            UI.ShowMessage(Settings.BYE);
-            UI.ReadData();
-        }
     }
 }

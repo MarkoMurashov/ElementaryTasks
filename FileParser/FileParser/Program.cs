@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using Assistant;
 
 namespace FileParser
 {
@@ -19,7 +14,7 @@ namespace FileParser
             {
                 Helper.ReplaceStringInFile(args[0], args[1], args[2]);
             }
-            Helper.Saybye();
+            Assistant.Helper.Saybye();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Assistant
 
         public static void Saybye()
         {
-            UI.ShowMessageWithNewLine("Press any key to continue ...");
+            UI.ShowMessageWithNewLine("\nPress any key to continue ...");
             UI.ReadData();
         }
 

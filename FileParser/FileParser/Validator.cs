@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 
+using Assistant;
+
 namespace FileParser
 {
     class Validator
@@ -9,8 +11,8 @@ namespace FileParser
         {
             if (args.Length == 0 || args.Length > 4)
             {
-                UI.ShowMessage(Settings.INSTRUCTION);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.INSTRUCTION);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return args.Length == 2;
@@ -20,8 +22,8 @@ namespace FileParser
         {           
             if (!File.Exists(path))
             {
-                UI.ShowMessage(Settings.WRONG_PATH);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.WRONG_PATH);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return true;
