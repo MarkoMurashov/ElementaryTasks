@@ -122,13 +122,7 @@ namespace NumbersInWords
                 number = number.Replace("-", "");
             }
             return result;
-          }
-
-        public static void Saybye()
-        {
-            UI.ShowMessage(Settings.BYE);
-            UI.ReadData();
-        }
+          }      
 
     }
 }

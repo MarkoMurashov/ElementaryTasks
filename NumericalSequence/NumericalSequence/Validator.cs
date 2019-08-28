@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Assistant;
+
 namespace NumericalSequence
 {
     static class Validator
@@ -9,14 +11,14 @@ namespace NumericalSequence
             int result;
             if (!int.TryParse(tmp, out result))
             {
-                UI.ShowMessage(Settings.WRONG_DATA);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.WRONG_DATA);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             if (result > 10000)
             {
-                UI.ShowMessage(Settings.BIG);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.BIG);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return result;

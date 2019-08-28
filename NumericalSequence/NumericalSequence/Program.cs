@@ -1,4 +1,5 @@
-﻿
+﻿using Assistant;
+
 namespace NumericalSequence
 {
     class Program
@@ -11,9 +12,9 @@ namespace NumericalSequence
             }
             else
             {
-                UI.ShowMessage(Settings.INSTRUCTION);
+                UI.ShowMessageWithNewLine(Settings.INSTRUCTION);
             }
-            Helper.Saybye();
+            Assistant.Helper.Saybye();
         }
     }
 }

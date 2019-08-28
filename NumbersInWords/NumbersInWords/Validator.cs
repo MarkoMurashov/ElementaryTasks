@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Assistant;
+
 namespace NumbersInWords
 {
     static class Validator
@@ -9,14 +11,14 @@ namespace NumbersInWords
             int result;
             if (!int.TryParse(tmp, out result))
             {
-                UI.ShowMessage(Settings.WRONG_DATA);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.WRONG_DATA);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             if (result > 1999999999)
             {
-                UI.ShowMessage(Settings.BIG);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.BIG);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
 
@@ -26,8 +28,8 @@ namespace NumbersInWords
         {
             if (args.Length > 2)
             {
-                UI.ShowMessage(Settings.WRONG_NUMBER_OF_ARGS);
-                Helper.Saybye();
+                UI.ShowMessageWithNewLine(Settings.WRONG_NUMBER_OF_ARGS);
+                Assistant.Helper.Saybye();
                 Environment.Exit(0);
             }
             return args.Length == 0;

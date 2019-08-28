@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assistant">
+      <HintPath>..\..\Assistant\Assistant\bin\Debug\Assistant.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Tens.cs" />
-    <Compile Include="UI.cs" />
     <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>

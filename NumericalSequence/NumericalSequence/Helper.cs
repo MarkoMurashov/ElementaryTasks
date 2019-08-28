@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using Assistant;
+
 namespace NumericalSequence
 {
     class Helper
@@ -12,12 +14,8 @@ namespace NumericalSequence
             {
                 answer.Add(i*i);
             }
-            UI.ShowMessage(string.Join(", ", answer));      
+            UI.ShowMessageWithNewLine(string.Join(", ", answer));      
         }
-        public static void Saybye()
-        {
-            UI.ShowMessage(Settings.BYE);
-            UI.ReadData();
-        }
+      
     }
 }
