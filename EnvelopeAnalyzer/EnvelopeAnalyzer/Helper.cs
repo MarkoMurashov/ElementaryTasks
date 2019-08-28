@@ -1,4 +1,5 @@
-﻿
+﻿using Assistant;
+
 namespace EnvelopeAnalyzer
 {
     static class Helper
@@ -16,12 +17,12 @@ namespace EnvelopeAnalyzer
         public static void AnalyzeEnvelopes()
         {
             CreateEnvelopes();
-            UI.ShowAnswer(envelopes[0].Compare(envelopes[1]));
+            UI.ShowAnswer(envelopes[0].Compare(envelopes[1]),Settings.ANSWER_YES, Settings.ANSWER_NO);
         }
 
         public static bool ContinueWork()
         {
-            UI.ShowMessage(Settings.CONTINUE);
+            UI.ShowMessageWithNewLine(Settings.CONTINUE);
             string agrement = UI.ReadData().ToUpper();
 
             return agrement == Settings.SMALL_YES || agrement == Settings.BIG_YES;

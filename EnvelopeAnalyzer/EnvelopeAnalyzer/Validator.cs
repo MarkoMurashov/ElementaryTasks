@@ -1,4 +1,5 @@
 ﻿using System;
+using Assistant;
 
 namespace EnvelopeAnalyzer
 {
@@ -6,11 +7,11 @@ namespace EnvelopeAnalyzer
     {
         public static double CheckData(string invitation)
         {
-            UI.ShowMessage(invitation);
+            UI.ShowMessageWithNewLine(invitation);
             double result;
             if (!double.TryParse(Console.ReadLine(), out result) || result <= 0)
             {
-                UI.ShowMessage(Settings.WRONG_DATA);
+                UI.ShowMessageWithNewLine(Settings.WRONG_DATA);
                 UI.ReadData();
                 Environment.Exit(0);
             }

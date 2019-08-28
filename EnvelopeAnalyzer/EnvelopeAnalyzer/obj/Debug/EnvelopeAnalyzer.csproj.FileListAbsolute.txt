@@ -5,3 +5,6 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\o
 C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csproj.CoreCompileInputs.cache
 C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.exe
 C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\Assistant.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csproj.CopyComplete

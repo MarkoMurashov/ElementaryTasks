@@ -27,5 +27,17 @@ namespace Assistant
         {
             Console.BackgroundColor = color;
         }
+
+        public static void ShowAnswer(bool answer, string yes, string no)
+        {
+            if (answer)
+            {
+                Console.WriteLine(yes);
+            }
+            else
+            {
+                Console.WriteLine(no);
+            }
+        }
     }
 }
