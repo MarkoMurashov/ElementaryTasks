@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace FileParser
 {
     class Settings
@@ -16,7 +11,6 @@ namespace FileParser
 The program should accept input arguments at startup:
 <file path> <line for counting>
 <file path> <search string> <replacement string>";
-
 
         public const string NO_MATCH = "No matching in the file";
 
