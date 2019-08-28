@@ -19,13 +19,6 @@ namespace EnvelopeAnalyzer
             CreateEnvelopes();
             UI.ShowAnswer(envelopes[0].Compare(envelopes[1]),Settings.ANSWER_YES, Settings.ANSWER_NO);
         }
-
-        public static bool ContinueWork()
-        {
-            UI.ShowMessageWithNewLine(Settings.CONTINUE);
-            string agrement = UI.ReadData().ToUpper();
-
-            return agrement == Settings.SMALL_YES || agrement == Settings.BIG_YES;
-        }
+      
     }
 }

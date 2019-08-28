@@ -1,4 +1,5 @@
-﻿
+﻿using Assistant;
+
 namespace EnvelopeAnalyzer
 {
     class Program
@@ -8,7 +9,7 @@ namespace EnvelopeAnalyzer
             do
             {
                 Helper.AnalyzeEnvelopes();
-            } while (Helper.ContinueWork());
+            } while (Assistant.Helper.ContinueWork(Settings.CONTINUE));
         }
     }
 }

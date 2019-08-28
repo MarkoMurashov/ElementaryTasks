@@ -17,14 +17,11 @@ namespace EnvelopeAnalyzer
 
         public bool Compare(Envelope envelope2)
         {
-            if ((this.Length < envelope2.Length && this.Width < envelope2.Width)
+            return ((this.Length < envelope2.Length && this.Width < envelope2.Width)
                  || (this.Length < envelope2.Width && this.Width < envelope2.Length)
                  || (envelope2.Length < this.Length && envelope2.Width < this.Width)
-                 || (envelope2.Length < this.Width && envelope2.Width < this.Length))
-            {
-                return true;
-            }
-            return false;
+                 || (envelope2.Length < this.Width && envelope2.Width < this.Length));
+            
         }
     }
 }
