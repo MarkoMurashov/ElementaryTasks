@@ -4,20 +4,30 @@ using System.IO;
 
 namespace FileParser
 {
-    class Searcher: ISearch 
+    class Searcher: FileParser, IStrategy
     {
-        public int SearchSubstring(string path, string substring)
+        public int NumberOfOccurrences {get; set;}
+
+        public Searcher(string path, string oldString)
+            :base(path, oldString)
         {
-            int result = 0;              
-            foreach (var line in File.ReadLines(path))
-            {
-               if (line.Contains(substring))
-               {
-                 result += line.Split(new string[] { substring }, StringSplitOptions.None).Length-1;
-               }
-            }        
-            
-            return result;
+
         }
+
+        public void Algorithm()
+        {
+            int result = 0;
+            foreach (var line in File.ReadLines(this.Path))
+            {
+                if (line.Contains(this.SubString))
+                {
+                    result += line.Split(new string[] { this.SubString }, StringSplitOptions.None).Length - 1;
+                }
+            }
+
+            NumberOfOccurrences= result;
+        }
+
+       
     }
 }
