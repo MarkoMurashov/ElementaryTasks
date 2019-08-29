@@ -22,3 +22,13 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\Fil
 C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\FileParser.csproj.CopyComplete
 C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\FileParser.exe
 C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\FileParser.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\bin\Debug\FileParser.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\bin\Debug\FileParser.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\bin\Debug\FileParser.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\bin\Debug\Assistant.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\bin\Debug\Assistant.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\obj\Debug\FileParser.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\obj\Debug\FileParser.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\obj\Debug\FileParser.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\obj\Debug\FileParser.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks-master\FileParser\FileParser\obj\Debug\FileParser.pdb

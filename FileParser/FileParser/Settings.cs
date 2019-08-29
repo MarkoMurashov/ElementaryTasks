@@ -12,9 +12,9 @@ The program should accept input arguments at startup:
 <file path> <line for counting>
 <file path> <search string> <replacement string>";
 
-        public const string NO_MATCH = "No matching in the file";
+        public const string MATCH = "{0} matching in the file";
 
-        public const string MATCH = " matching in the file";
+        public const string NO_MATCH = "No matching in the file";
 
         public const string WRONG_NUMBER_OF_ARGS = "Wrong number of args :(";
 
