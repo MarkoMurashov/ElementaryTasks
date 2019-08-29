@@ -6,31 +6,30 @@ using System.Threading.Tasks;
 
 namespace FileParser
 {
-    public abstract class FileParser
+    public class FileParser
     {
-        public string Path { get; set; }
+        private string PathToFile { get; set; }
 
-        public string SubString { get; set; }
+        private string SubString { get; set; }
 
         public IStrategy Strategy { private get; set; }
 
 
         public FileParser(string path, string subString, IStrategy strategy)
         {
-            Path = path;
+            PathToFile = path;
             SubString=subString;
             Strategy = strategy;
         }
-
-        public FileParser(string path, string subString)
+       
+        public FileParser()
         {
-            Path = path;
-            SubString = subString;
+
         }
 
-        public void DoAlgorithn()
+        public int DoAlgorithn()
         {
-            Strategy.Algorithm();
+           return Strategy.Algorithm(PathToFile, SubString);
         }
 
     }

@@ -8,6 +8,6 @@ namespace FileParser
 {
     public interface IStrategy
     {
-         void Algorithm();
+         int Algorithm(string path, string substring);
     }
 }

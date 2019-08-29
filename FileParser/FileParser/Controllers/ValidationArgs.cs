@@ -6,7 +6,7 @@ namespace FileParser
 {
     class ValidationArgs: IValid
     {
-        public Operation isNumbeOfArgsValid(string[] args)
+        public Operation GetValidArgs(string[] args)
         {
             if (!Enum.IsDefined(typeof(Operation), args.Length))
             {

@@ -8,6 +8,6 @@ namespace FileParser.Interfaces
 {
     interface IValid
     {
-        Operation isNumbeOfArgsValid(string[] args);
+        Operation GetValidArgs(string[] args);
     }
 }

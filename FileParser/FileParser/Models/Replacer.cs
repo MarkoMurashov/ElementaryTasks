@@ -1,5 +1,5 @@
 ﻿using System.IO;
-
+using System;
 
 namespace FileParser
 {
@@ -7,25 +7,24 @@ namespace FileParser
     {        
         public string NewString { get; set; }
 
-        public Replacer(string path,string oldString, string newString)  
-            :base(path, oldString)
+        public Replacer(string newString)  
         {
             NewString = newString;
         }
 
-        public void Algorithm()
+        public int Algorithm(string path, string substr)
         {
             bool noMatch = true;
-            var allStrings = File.ReadAllLines(this.Path);
-            using (StreamWriter write = new StreamWriter(this.Path))
+            var allStrings = File.ReadAllLines(path);
+            using (StreamWriter write = new StreamWriter(path))
             {
                 foreach (var str in allStrings)
                 {
-                    if (str.Contains(this.SubString) && noMatch)
+                    if (str.Contains(substr) && noMatch)
                     {
                         noMatch = false;
                     }
-                    write.WriteLine(str.Replace(this.SubString, NewString));
+                    write.WriteLine(str.Replace(substr, NewString));
                 }
 
             }
@@ -35,7 +34,7 @@ namespace FileParser
                 throw new System.Exception(Settings.NO_MATCH);
             }
 
-
+            return 0;
         }
     }
 }
