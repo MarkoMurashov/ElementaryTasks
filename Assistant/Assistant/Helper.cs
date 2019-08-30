@@ -5,16 +5,10 @@ namespace Assistant
     {
         public static bool ContinueWork(string cont)
         {
-            UI.ShowMessageWithNewLine(cont);
+            UI.ShowMessage(cont);
             string agrement = UI.ReadData().ToUpper();
 
             return agrement == "Y" || agrement == "YES";
-        }
-
-        public static void Saybye()
-        {
-            UI.ShowMessageWithNewLine("\nPress any key to continue ...");
-            UI.ReadData();
         }
 
     }

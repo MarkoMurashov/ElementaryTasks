@@ -8,12 +8,12 @@ namespace Assistant
 {
     public class UI
     {
-        public static void ShowMessageWithNewLine(string str = "")
+        public static void ShowMessage(string str = "")
         {
             Console.WriteLine(str);
         }
 
-        public static void ShowMessage(string str)
+        public static void ShowShortMessage(string str)
         {
             Console.Write(str);
         }
@@ -39,6 +39,12 @@ namespace Assistant
                 Console.WriteLine(no);
             }
         }
+       
 
+        public static void Saybye()
+        {
+            ShowMessage("\nPress any key to continue ...");
+            ReadData();
+        }
     }
 }

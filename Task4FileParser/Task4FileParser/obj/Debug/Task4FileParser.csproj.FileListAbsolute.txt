@@ -1,0 +1,9 @@
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\bin\Debug\FileParser.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\bin\Debug\FileParser.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\bin\Debug\Assistant.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\Task4FileParser.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\Task4FileParser.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\Task4FileParser.csproj.CopyComplete
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\FileParser.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\FileParser\FileParser\obj\Debug\FileParser.pdb
