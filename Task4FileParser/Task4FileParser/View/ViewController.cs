@@ -2,16 +2,16 @@
 
 namespace Task4FileParser.UI
 {
-    class ResultController: IDisplay
+    class ViewController: IDisplay
     {
         string _message { get; set; }
 
-        public ResultController(Exception ex)
+        public ViewController(Exception ex)
         {
             _message = ex.Message;
         }
 
-        public ResultController(string message)
+        public ViewController(string message)
         {
             _message = message;
         }

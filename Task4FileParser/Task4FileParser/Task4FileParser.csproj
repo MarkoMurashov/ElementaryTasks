@@ -56,7 +56,7 @@
     <Compile Include="Models\Replacer.cs" />
     <Compile Include="Models\Searcher.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="View\ResultController.cs" />
+    <Compile Include="View\ViewController.cs" />
     <Compile Include="Interfaces\IDisplay.cs" />
     <Compile Include="ValidationControl\ValidationArgs.cs" />
     <Compile Include="ValidationControl\ValidationData.cs" />

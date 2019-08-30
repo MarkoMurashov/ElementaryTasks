@@ -28,26 +28,26 @@ namespace Task4FileParser
                 switch (op)
                 {
                     case Operation.Instruction:
-                        new ResultController(Settings.INSTRUCTION).Show();
+                        new ViewController(Settings.INSTRUCTION).Show();
                         break;
 
                     case Operation.Search:
                         fileParser = new FileParser(args[0].CheckPath(), args[1], new Searcher());
                         substringNumber = string.Format(Settings.MATCH, fileParser.DoAlgorithn());
-                        new ResultController(substringNumber).Show();
+                        new ViewController(substringNumber).Show();
                         break;
 
                     case Operation.Replace:
                         fileParser = new FileParser(args[0].CheckPath(), args[1], new Replacer(args[2]));
                         substringNumber = string.Format(Settings.REPLACED, fileParser.DoAlgorithn()); 
-                        new ResultController(substringNumber).Show();
+                        new ViewController(substringNumber).Show();
                         break;
                 }
 
             }
             catch (Exception ex)
             {
-                new ResultController(ex).Show();
+                new ViewController(ex).Show();
             }
         }
     }
