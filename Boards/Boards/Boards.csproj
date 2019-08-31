@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Board.cs" />
+    <Compile Include="Interfaces\IBoardable.cs" />
+    <Compile Include="Models\Board.cs" />
     <Compile Include="Enums\Operation.cs" />
     <Compile Include="Interfaces\IValid.cs" />
     <Compile Include="Program.cs" />
@@ -60,8 +61,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

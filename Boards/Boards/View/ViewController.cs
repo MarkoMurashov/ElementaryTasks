@@ -1,10 +1,11 @@
 ﻿using System;
 
 using Assistant;
+using Boards.Interfaces;
 
 namespace Boards.View
 {
-    class ViewController
+    class ViewController: IBoardable
     {
         private string _message { get; set; }
 
@@ -47,7 +48,8 @@ namespace Boards.View
                     UI.ShowShortMessage(board.Cells[i, j].ToString());
                 }
                 UI.ShowMessage();
-            }          
+            }
+            Show();
         }
       
     }

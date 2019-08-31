@@ -30,10 +30,9 @@ namespace Boards
                         break;
 
                     case Operation.Print:
-                        ViewController view = new ViewController();
+                        IBoardable view = new ViewController();
                         view.PrintBoard(Board.getBoard(args[0].CheckNaturalNumber(Settings.NUMBER_LIMIT),
-                            args[1].CheckNaturalNumber(Settings.NUMBER_LIMIT)));
-                        view.Show();
+                            args[1].CheckNaturalNumber(Settings.NUMBER_LIMIT)));                        
                         break;
                     
                 }
