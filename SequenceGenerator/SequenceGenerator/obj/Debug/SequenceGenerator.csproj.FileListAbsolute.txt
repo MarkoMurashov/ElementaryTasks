@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\bin\Debug\SequenceGenerator.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\bin\Debug\SequenceGenerator.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\obj\Debug\SequenceGenerator.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\obj\Debug\SequenceGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\obj\Debug\SequenceGenerator.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceGenerator\SequenceGenerator\obj\Debug\SequenceGenerator.pdb

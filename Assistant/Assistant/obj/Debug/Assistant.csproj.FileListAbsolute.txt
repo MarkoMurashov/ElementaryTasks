@@ -4,3 +4,9 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assis
 C:\Users\utilisateur\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assistant.csproj.CoreCompileInputs.cache
 C:\Users\utilisateur\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assistant.dll
 C:\Users\utilisateur\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assistant.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\bin\Debug\UI.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\bin\Debug\UI.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assistant.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\Assistant.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\UI.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Assistant\Assistant\obj\Debug\UI.pdb
