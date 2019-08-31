@@ -46,14 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="Enums\Operation.cs" />
+    <Compile Include="Interfaces\IValid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Validator.cs" />
+    <Compile Include="ValidationControl\ValidationArgs.cs" />
+    <Compile Include="ValidationControl\ValidationData.cs" />
+    <Compile Include="View\ViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

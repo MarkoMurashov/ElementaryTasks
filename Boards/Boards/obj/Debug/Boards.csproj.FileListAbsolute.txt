@@ -8,3 +8,13 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.dll
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Boards.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\bin\Debug\Assistant.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.pdb
