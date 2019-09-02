@@ -2,24 +2,34 @@
 
 namespace Controllers
 {
-    public class ViewController
+    public class ViewController: IController
     {
-        string _message { get; set; }
+        public string Message { get; set; }
 
         public ViewController(Exception ex)
         {
-            _message = ex.Message;
+            Message = ex.Message;
         }
 
         public ViewController(string message)
         {
-            _message = message;
+            Message = message;
         }
 
-        public void Show()
+        public void ShowAnswer()
         {
-            Console.WriteLine(_message);
+            Console.WriteLine(Message);
             Saybye();
+        }
+
+        public void Show(string message="")
+        {
+            Console.WriteLine(Message);
+        }
+
+        public string GetDataFromConsole()
+        {
+            return Console.ReadLine();
         }
 
         public void Saybye()

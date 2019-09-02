@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\bin\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\bin\Debug\ViewController.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\obj\Debug\ViewController.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\obj\Debug\ViewController.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\obj\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\ViewController\ViewController\obj\Debug\ViewController.pdb

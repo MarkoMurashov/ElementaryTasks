@@ -4,3 +4,9 @@ C:\Users\Lenovo\source\repos\Controllers\Controllers\bin\Debug\Controllers.dll
 C:\Users\Lenovo\source\repos\Controllers\Controllers\bin\Debug\Controllers.pdb
 C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.dll
 C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\bin\Debug\Controllers.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\bin\Debug\Controllers.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\obj\Debug\Controllers.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Controllers\Controllers\obj\Debug\Controllers.pdb

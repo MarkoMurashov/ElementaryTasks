@@ -1,38 +1,42 @@
 ﻿using System;
 
-using Boards.Interfaces;
 using Boards.Enums;
-using Boards.View;
-using Boards.ValidationControl;
+using ViewController;
+using ConsoleArgsValidation;
 
 namespace Boards
 {
     class Application
     {
-        private IValid _validation;
+        private IValid Validation { get; set; }
+        private IView View { get; set; }
 
-        public Application(IValid valid)
+        public Application(IValid valid, IView view)
         {
-            _validation = valid;
+            Validation = valid;
+            View = view;
         }
 
         public void Run(string[] args)
         {
+            View.SetConsoleColor(ConsoleColor.Black);
+
             try
             {
-                Operation op = _validation.GetValidArgs(args);
+                Operation op = Validation.GetValidArgs<Operation>(args);
                
 
                 switch (op)
                 {
                     case Operation.Instruction:
-                        new ViewController(Settings.INSTRUCTION).Show();
+                        View.Display(Settings.INSTRUCTION);
                         break;
 
                     case Operation.Print:
-                        IBoardable view = new ViewController();
-                        view.PrintBoard(Board.getBoard(args[0].CheckNaturalNumber(Settings.NUMBER_LIMIT),
-                            args[1].CheckNaturalNumber(Settings.NUMBER_LIMIT)));                        
+                        int firstIndex = Validation.GetValidIntArg(args[0]);
+                        int secondIndex = Validation.GetValidIntArg(args[1]);
+
+                        View.PrintBoard(Board.getBoard(firstIndex, secondIndex));                        
                         break;
                     
                 }
@@ -40,7 +44,7 @@ namespace Boards
             }
             catch (Exception ex)
             {
-                new ViewController(ex).Show();
+                View.DisplayError(ex);
             }
         }
     }
