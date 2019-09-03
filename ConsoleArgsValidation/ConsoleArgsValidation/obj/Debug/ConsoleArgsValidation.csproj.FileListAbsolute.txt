@@ -10,9 +10,3 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidat
 C:\Users\Lenovo\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.pdb
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\bin\Debug\ConsoleArgsValidation.dll
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\bin\Debug\ConsoleArgsValidation.pdb
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.csprojAssemblyReference.cache
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.csproj.CoreCompileInputs.cache
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.dll
-C:\Users\utilisateur\Desktop\ElementaryTasks\ConsoleArgsValidation\ConsoleArgsValidation\obj\Debug\ConsoleArgsValidation.pdb
