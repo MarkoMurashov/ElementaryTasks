@@ -1,7 +1,5 @@
-﻿using System;
-using Assistant;
-
-using Boards.ValidationControl;
+﻿using ViewController;
+using ConsoleArgsValidation;
 
 namespace Boards
 {
@@ -9,11 +7,8 @@ namespace Boards
     {
         static void Main(string[] args)
         {
-            
-            UI.SetConsoleColor(ConsoleColor.Black);
-
-            new Application(new ValidationArgs()).Run(args);
-       
+                      
+            new Application(new CommandLineValidation(), new ConsoleUI()).Run(args);      
         }
     }
 }

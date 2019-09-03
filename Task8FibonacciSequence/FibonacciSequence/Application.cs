@@ -1,55 +1,61 @@
 ﻿using System;
 
-using SequenceValidation;
+
 using SequenceGenerator;
-using Controllers;
+using ConsoleArgsValidation;
+using ViewController;
 
 namespace FibonacciSequence
 {
     class Application
     {
-        private IValid _validation;
+        private IValid Validation { get; set; }
 
-        public Application(IValid valid)
+        private IView View { get; set; }
+
+        public Application(IValid valid, IView view)
         {
-            _validation = valid;
+            Validation = valid;
+            View = view;
         }
 
         public void Run(string[] args)
         {
             try
             {
-                Operation op = _validation.GetValidArgs<Operation>(args);
+                Operation op = Validation.GetValidArgs<Operation>(args);
 
                 switch (op)
                 {
                     case Operation.Instruction:
-                        new ViewController(Settings.INSTRUCTION).Show();
+                        View.Display(Settings.INSTRUCTION);
                         break;
                     
                     case Operation.Fibonacci:
-                        int[] diapason = args.CheckNaturalNumber(Settings.NUMBER_LIMIT);
-                        if (diapason[0] > diapason[1])
+                        int sequenceStart = Validation.ParsePositiveNumber(args[0], Settings.NUMBER_LIMIT);
+                        int sequenceEnd = Validation.ParsePositiveNumber(args[1], Settings.NUMBER_LIMIT);
+                        if (sequenceStart > sequenceEnd)
                         {
-                            _validation.ExchangeValue(ref diapason[0], ref diapason[1]);
+                            Validation.ExchangeIntValue(ref sequenceStart, ref sequenceEnd);
                         }
-                        CreatorSequence sequence = new CreatorSequence(new FibonacciGenerator(diapason[0], diapason[1]));
+                        CreatorSequence sequence = new CreatorSequence(new FibonacciGenerator(sequenceStart, sequenceEnd));
                         string fibonacci = string.Join(", ", sequence.Create());
                         if (fibonacci.Length > 0)
                         {
-                            new ViewController(fibonacci).Show();
+                            View.Display(fibonacci);
                         }
                         else
                         {
-                            new ViewController(Settings.NO_MATCH).Show();
+                            View.Display(Settings.NO_MATCH);
                         }
                         break;                 
                 }
+                View.Saybye();
 
             }
             catch (Exception ex)
             {
-                new ViewController(ex).Show();
+                View.DisplayError(ex);
             }
         }
     }

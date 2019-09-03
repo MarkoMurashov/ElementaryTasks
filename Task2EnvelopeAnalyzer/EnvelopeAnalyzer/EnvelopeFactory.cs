@@ -1,17 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using EnvelopeAnalyzer.Interfaces;
+using ConsoleArgsValidation;
 
 namespace EnvelopeAnalyzer
 {
-    class EnvelopeFactory: IEnvelopeCreate
+    class EnvelopeFactory
     {
-        public Envelope Create(float width, float length)
+        private EnvelopeFactory()
         {
+
+        }
+
+        public static Envelope Create(IValid valid, float width, float length)
+        {
+            if(width <= 0.0 || length <= 0.0)
+            {
+                throw new Exception(Settings.NEGATIVE_DATA);
+            }
+
             return new Envelope(width, length);
         }
     }

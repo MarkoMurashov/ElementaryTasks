@@ -1,53 +1,61 @@
 ﻿using System;
 
-using Task4FileParser.Interfaces;
-using Task4FileParser.UI;
+using ConsoleArgsValidation;
+using ViewController;
 
 namespace Task4FileParser
 {
     class Application
     {
 
-        private IValid _validation;
+        private IValid Validation { get; set; }
 
-        public Application(IValid valid)
+        private IView View { get; set; }
+
+        public Application(IValid valid, IView view)
         {
-            _validation = valid;
+            Validation = valid;
+            View = view;
         }
 
         public void Run(string[] args)
         {
             try
             {
-                Operation op = _validation.GetValidArgs(args);
+                Operation op = Validation.GetValidArgs<Operation>(args);
 
                 string substringNumber=string.Empty;
-
                 FileParser fileParser;
 
                 switch (op)
                 {
                     case Operation.Instruction:
-                        new ViewController(Settings.INSTRUCTION).Show();
+                        View.Display(Settings.INSTRUCTION);
                         break;
 
                     case Operation.Search:
-                        fileParser = new FileParser(args[0].CheckPath(), args[1], new Searcher());
-                        substringNumber = string.Format(Settings.MATCH, fileParser.DoAlgorithn());
-                        new ViewController(substringNumber).Show();
+                        if (Validation.CheckPath(args[0]))
+                        {
+                            fileParser = new FileParser(args[0], args[1], new Searcher());
+                            substringNumber = string.Format(Settings.MATCH, fileParser.DoAlgorithn());
+                            View.Display(substringNumber);
+                        }
                         break;
 
                     case Operation.Replace:
-                        fileParser = new FileParser(args[0].CheckPath(), args[1], new Replacer(args[2]));
-                        substringNumber = string.Format(Settings.REPLACED, fileParser.DoAlgorithn()); 
-                        new ViewController(substringNumber).Show();
+                        if (Validation.CheckPath(args[0]))
+                        {
+                            fileParser = new FileParser(args[0], args[1], new Replacer(args[2]));
+                            substringNumber = string.Format(Settings.REPLACED, fileParser.DoAlgorithn());
+                            View.Display(substringNumber);
+                        }                        
                         break;
                 }
 
             }
             catch (Exception ex)
             {
-                new ViewController(ex).Show();
+                View.DisplayError(ex);
             }
         }
     }

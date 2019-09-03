@@ -1,4 +1,5 @@
-﻿using SequenceValidation;
+﻿using ConsoleArgsValidation;
+using ViewController;
 
 namespace FibonacciSequence
 {
@@ -6,8 +7,7 @@ namespace FibonacciSequence
     {
         static void Main(string[] args)
         {
-            new Application(new ValidationArgs()).Run(args);
-
+            new Application(new CommandLineValidation(), new ConsoleUI()).Run(args);
         }
     }
 }

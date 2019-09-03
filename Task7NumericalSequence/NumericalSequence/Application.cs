@@ -1,53 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using SequenceValidation;
+using ConsoleArgsValidation;
+using ViewController;
 using SequenceGenerator;
-using Controllers;
 
 namespace NumericalSequence
 {
     class Application
     {
-        private IValid _validation;
+        private IValid Validation { get; set; }
 
-        public Application(IValid valid)
+        private IView View { get; set; }
+
+        public Application(IValid valid, IView view)
         {
-            _validation = valid;
+            Validation = valid;
+            View = view;
         }
 
         public void Run(string[] args)
         {
             try
             {
-                Operation op = _validation.GetValidArgs<Operation>(args);
+                Operation op = Validation.GetValidArgs<Operation>(args);
 
                 switch (op)
                 {
                     case Operation.Instruction:
-                        new ViewController(Settings.INSTRUCTION).Show();
+                        View.Display(Settings.INSTRUCTION);
                         break;
                     case Operation.Quadtratic:
-                        CreatorSequence sequence = new CreatorSequence(new QuadraticSequence(args[0].ParseArgs(Settings.NUMBER_LIMIT)));
+                        int sequenceEnd = Validation.ParsePositiveNumber(args[0],Settings.NUMBER_LIMIT);
+                        CreatorSequence sequence = new CreatorSequence(new QuadraticSequence(sequenceEnd));
                         string fibonacci = string.Join(", ", sequence.Create());
                         if (fibonacci.Length > 0)
                         {
-                            new ViewController(fibonacci).Show();
+                            View.Display(fibonacci);
                         }
                         else
                         {
-                            new ViewController(Settings.NO_MATCH).Show();
+                            View.Display(Settings.NO_MATCH);
                         }
                         break;
                 }
-
+                View.Saybye();
             }
             catch (Exception ex)
             {
-                new ViewController(ex).Show();
+                View.DisplayError(ex);
             }
         }
     }

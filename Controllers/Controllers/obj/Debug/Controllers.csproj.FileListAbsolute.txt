@@ -1,6 +1,0 @@
-C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
-C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\source\repos\Controllers\Controllers\bin\Debug\Controllers.dll
-C:\Users\Lenovo\source\repos\Controllers\Controllers\bin\Debug\Controllers.pdb
-C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.dll
-C:\Users\Lenovo\source\repos\Controllers\Controllers\obj\Debug\Controllers.pdb

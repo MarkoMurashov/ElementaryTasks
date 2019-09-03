@@ -33,17 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assistant">
-      <HintPath>..\..\Assistant\Assistant\bin\Debug\Assistant.dll</HintPath>
-    </Reference>
-    <Reference Include="Controllers">
-      <HintPath>..\..\Controllers\Controllers\bin\Debug\Controllers.dll</HintPath>
+    <Reference Include="ConsoleArgsValidation">
+      <HintPath>..\..\ConsoleArgsValidation\ConsoleArgsValidation\bin\Debug\ConsoleArgsValidation.dll</HintPath>
     </Reference>
     <Reference Include="SequenceGenerator">
       <HintPath>..\..\SequenceGenerator\SequenceGenerator\bin\Debug\SequenceGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="SequenceValidation">
-      <HintPath>..\..\SequenceValidation\SequenceValidation\bin\Debug\SequenceValidation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +47,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="ViewController">
+      <HintPath>..\..\ViewController\ViewController\bin\Debug\ViewController.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />

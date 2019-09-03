@@ -18,3 +18,16 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.Co
 C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.exe
 C:\Users\Lenovo\Desktop\ElementaryTasks\Boards\Boards\obj\Debug\Boards.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\Boards.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\Boards.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\Boards.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\Assistant.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\bin\Debug\ViewController.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\obj\Debug\Boards.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\obj\Debug\Boards.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\obj\Debug\Boards.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\obj\Debug\Boards.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task1Boards\Boards\obj\Debug\Boards.pdb
