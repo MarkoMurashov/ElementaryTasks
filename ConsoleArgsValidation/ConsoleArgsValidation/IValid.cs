@@ -15,6 +15,7 @@ namespace ConsoleArgsValidation
         int GetValidIntArg(string str);
 
         bool CheckPath(string str);
+<<<<<<< HEAD
 
         int ParsePositiveNumber(string str, int maxValue);
 
@@ -23,5 +24,7 @@ namespace ConsoleArgsValidation
         string[] GetValidTriangleArgs(string args);
 
         double[] GetDoublesFromConsole(string[] str);
+=======
+>>>>>>> de62eef0f5643959982235afdf2f916c07e519c1
     }
 }
