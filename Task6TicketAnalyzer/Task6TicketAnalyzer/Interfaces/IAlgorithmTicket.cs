@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task6TicketAnalyzer
 {
-    interface IAlgorithTicket
+    interface IAlgorithmTicket
     {
-        bool IsLucky(Ticket ticket);
+        int GetAllLucky(uint start, uint max);
+
     }
 }
