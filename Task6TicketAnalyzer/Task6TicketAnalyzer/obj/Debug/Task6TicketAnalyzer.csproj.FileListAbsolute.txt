@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\bin\Debug\Task6TicketAnalyzer.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\bin\Debug\Task6TicketAnalyzer.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\bin\Debug\Task6TicketAnalyzer.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\obj\Debug\Task6TicketAnalyzer.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\obj\Debug\Task6TicketAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\obj\Debug\Task6TicketAnalyzer.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task6TicketAnalyzer\Task6TicketAnalyzer\obj\Debug\Task6TicketAnalyzer.pdb
