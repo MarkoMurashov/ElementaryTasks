@@ -38,3 +38,17 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSeq
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceValidation.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ViewController.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NumericalSequence.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NumericalSequence.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NumericalSequence.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceGenerator.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceGenerator.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ViewController.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.pdb

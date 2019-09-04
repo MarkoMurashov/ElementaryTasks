@@ -61,10 +61,10 @@ namespace EnvelopeAnalyzer
         public Envelope InitializeEnvelope(int envelopeNumber)
         {
             string message = string.Format(Settings.WIDTH, envelopeNumber);
-            float width = Valid.GetValidFloatArg(View.GetStringData(message));
+            string width = View.GetStringData(message);
 
             message = string.Format(Settings.LENGTH, envelopeNumber);
-            float length = Valid.GetValidFloatArg(View.GetStringData(message));
+            string length = View.GetStringData(message);
 
             return EnvelopeFactory.Create(new CommandLineValidation(), width, length);
         }

@@ -42,10 +42,6 @@ namespace ConsoleArgsValidation
             return true;
         }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of fc07733... Merge branch 'master' of https://github.com/MarkoMurashov/ElementaryTasks
         public int ParsePositiveNumber(string str, int maxValue)
         {
             if (!int.TryParse(str, out int num))
@@ -101,9 +97,6 @@ namespace ConsoleArgsValidation
         {
             return (a + b > c && a + c > b && b + c > a);
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of fc07733... Merge branch 'master' of https://github.com/MarkoMurashov/ElementaryTasks
     }
 }

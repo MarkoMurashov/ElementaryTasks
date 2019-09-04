@@ -21,3 +21,16 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CopyComplete
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.exe
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\TriangleSort.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\TriangleSort.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\TriangleSort.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\Assistant.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\bin\Debug\ViewController.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSort\obj\Debug\TriangleSort.pdb

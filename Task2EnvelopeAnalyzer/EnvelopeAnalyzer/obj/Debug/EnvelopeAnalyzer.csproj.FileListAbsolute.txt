@@ -15,7 +15,6 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\o
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.exe.config
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.exe
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.pdb
-C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\Assistant.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ConsoleArgsValidation.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\Assistant.pdb
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ConsoleArgsValidation.pdb
