@@ -1,6 +1,0 @@
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\bin\Debug\SequenceValidation.dll
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\bin\Debug\SequenceValidation.pdb
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\obj\Debug\SequenceValidation.csprojAssemblyReference.cache
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\obj\Debug\SequenceValidation.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\obj\Debug\SequenceValidation.dll
-C:\Users\Lenovo\Desktop\ElementaryTasks\SequenceValidation\SequenceValidation\obj\Debug\SequenceValidation.pdb
