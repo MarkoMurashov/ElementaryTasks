@@ -22,7 +22,7 @@ namespace Task4FileParser
         {
             try
             {
-                Operation op = Validation.GetValidArgs<Operation>(args);
+                Operation op = Validation.GetValidOperation<Operation>(args);
 
                 string substringNumber=string.Empty;
                 FileParser fileParser;
@@ -34,7 +34,7 @@ namespace Task4FileParser
                         break;
 
                     case Operation.Search:
-                        if (Validation.CheckPath(args[0]))
+                        if (Validation.GetValidPath(args[0]))
                         {
                             fileParser = new FileParser(args[0], args[1], new Searcher());
                             substringNumber = string.Format(Settings.MATCH, fileParser.DoAlgorithn());
@@ -43,7 +43,7 @@ namespace Task4FileParser
                         break;
 
                     case Operation.Replace:
-                        if (Validation.CheckPath(args[0]))
+                        if (Validation.GetValidPath(args[0]))
                         {
                             fileParser = new FileParser(args[0], args[1], new Replacer(args[2]));
                             substringNumber = string.Format(Settings.REPLACED, fileParser.DoAlgorithn());
@@ -51,7 +51,7 @@ namespace Task4FileParser
                         }                        
                         break;
                 }
-
+                View.Saybye();
             }
             catch (Exception ex)
             {

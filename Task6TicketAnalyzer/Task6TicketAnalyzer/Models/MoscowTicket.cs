@@ -4,12 +4,13 @@ namespace Task6TicketAnalyzer
 {
     class MoscowTicket : IAlgorithmTicket
     {
-        public int GetAllLucky(uint start, uint max)
+        public int GetAllLucky(byte power)
         {
             int luckyTicket = 0;
-            for (uint i = start; i <= max; i++)
+            double max = Math.Pow(10, power);
+            for (uint i = 0; i < max; i++)
             {
-                for (uint j = start; j <= max; j++)
+                for (uint j = 0; j < max ; j++)
                 {
                     if (CalculateSum(i) == CalculateSum(j))
                     {

@@ -54,10 +54,12 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="IBoard.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="TryBoardParse.cs" />
     <Compile Include="ViewContollerExtension.cs" />
   </ItemGroup>
   <ItemGroup>

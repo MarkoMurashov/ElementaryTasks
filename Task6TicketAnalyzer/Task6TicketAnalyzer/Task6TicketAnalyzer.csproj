@@ -50,14 +50,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
+    <Compile Include="Models\FileParser.cs" />
     <Compile Include="Interfaces\IAlgorithmTicket.cs" />
+    <Compile Include="Interfaces\ISourceAlgorithm.cs" />
     <Compile Include="Models\MoscowTicket.cs" />
     <Compile Include="Models\PiterTicket.cs" />
+    <Compile Include="Enum\Operation.cs" />
+    <Compile Include="ParametrsParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Models\Ticket.cs" />
     <Compile Include="Enum\TicketType.cs" />
+    <Compile Include="ViewExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

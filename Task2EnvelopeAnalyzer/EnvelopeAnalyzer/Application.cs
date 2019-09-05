@@ -7,13 +7,11 @@ namespace EnvelopeAnalyzer
 {
     class Application
     {
-        private IValid Valid { get; set; }
 
         private IView View { get; set; }
 
-        public Application(IValid valid, IView view)
+        public Application(IView view)
         {
-            Valid = valid;
             View = view;
         }
 
@@ -24,8 +22,8 @@ namespace EnvelopeAnalyzer
             {
                 try
                 {
-                    Envelope first = InitializeEnvelope(1);
-                    Envelope second = InitializeEnvelope(2);
+                    IEnvelope first = InitializeEnvelope(1);
+                    IEnvelope second = InitializeEnvelope(2);
 
                     Status status = first.Compare(second);
 
@@ -66,7 +64,7 @@ namespace EnvelopeAnalyzer
             message = string.Format(Settings.LENGTH, envelopeNumber);
             string length = View.GetStringData(message);
 
-            return EnvelopeFactory.Create(new CommandLineValidation(), width, length);
+            return Envelope.Create(new CommandLineValidation(), width, length);
         }
         
     }

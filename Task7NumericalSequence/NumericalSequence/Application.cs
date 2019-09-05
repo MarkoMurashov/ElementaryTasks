@@ -22,7 +22,7 @@ namespace NumericalSequence
         {
             try
             {
-                Operation op = Validation.GetValidArgs<Operation>(args);
+                Operation op = Validation.GetValidOperation<Operation>(args);
 
                 switch (op)
                 {
@@ -30,17 +30,19 @@ namespace NumericalSequence
                         View.Display(Settings.INSTRUCTION);
                         break;
                     case Operation.Quadtratic:
-                        int sequenceEnd = Validation.ParsePositiveNumber(args[0],Settings.NUMBER_LIMIT);
+                        ISequenceValidation sequenceValidation = new PositiveNumber();
+                        int sequenceEnd = sequenceValidation.ParsePositiveNumber(args[0],Settings.NUMBER_LIMIT);
+
                         CreatorSequence sequence = new CreatorSequence(new QuadraticSequence(sequenceEnd));
                         string fibonacci = string.Join(", ", sequence.Create());
+
                         if (fibonacci.Length > 0)
                         {
                             View.Display(fibonacci);
+                            break;
                         }
-                        else
-                        {
-                            View.Display(Settings.NO_MATCH);
-                        }
+                        
+                        View.Display(Settings.NO_MATCH);
                         break;
                 }
                 View.Saybye();

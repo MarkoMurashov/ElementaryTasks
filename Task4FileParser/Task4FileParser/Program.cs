@@ -2,8 +2,8 @@
 using System.IO;
 using System;
 
-using Task4FileParser.UI;
-using Task4FileParser.Interfaces;
+using ViewController;
+using ConsoleArgsValidation;
 
 namespace Task4FileParser
 {
@@ -11,7 +11,7 @@ namespace Task4FileParser
     {
         static void Main(string[] args)
         {
-            new Application(new ValidationArgs()).Run(args);
+            new Application(new CommandLineValidation(), new ConsoleUI()).Run(args);
         }
     }
 }

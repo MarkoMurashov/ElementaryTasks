@@ -1,30 +1,35 @@
-﻿
+﻿using System;
+
+using ConsoleArgsValidation;
+
 namespace EnvelopeAnalyzer
 {
-    class Envelope
+    class Envelope: IEnvelope
     {
         public float Width { get; set; }
 
         public float Length { get; set; }
 
-        public Envelope(float width, float length)
+        private Envelope(float width, float length)
         {
             Width = width;
             Length = length;
         }
 
-        public Status Compare(Envelope envelope2)
+        public Status Compare(IEnvelope second)
         {
-            if(this < envelope2)
+            if ((Length > second.Length && Width > second.Width)
+                 || (Length > second.Width && Width > second.Length))
             {
                 return Status.FirstInSecond;
             }
 
-            if (envelope2 < this)
+            if ((Length < second.Length && Width < second.Width)
+                 || (Length < second.Width && Width < second.Length))
             {
                 return Status.SecondInFirst;
             }
-            if (this == envelope2)
+            if (Width == second.Width && Length == second.Width)
             {
                 return Status.Equal;
             }
@@ -32,30 +37,18 @@ namespace EnvelopeAnalyzer
                 return Status.None;            
         }
 
-        #region Operation override
-
-        public static bool operator ==(Envelope first, Envelope second)
+        public static Envelope Create(IValid valid, string strWidth, string strLength)
         {
-            return (first.Width == second.Width && first.Length == second.Width);
-        }
+            float width = valid.GetValidFloatArg(strWidth);
 
-        public static bool operator >(Envelope first, Envelope second)
-        {
-            return ((first.Length > second.Length && first.Width > second.Width)
-                 || (first.Length > second.Width && first.Width > second.Length));
-        }
+            float length = valid.GetValidFloatArg(strLength);
+            if (width <= 0.0 || length <= 0.0)
+            {
+                throw new Exception(Settings.NEGATIVE_DATA);
+            }
 
-        public static bool operator <(Envelope first, Envelope second)
-        {
-            return ((first.Length < second.Length && first.Width < second.Width)
-                 || (first.Length < second.Width && first.Width < second.Length));
+            return new Envelope(width, length);
         }
-
-        public static bool operator !=(Envelope first, Envelope second)
-        {
-            return (first.Width != second.Width && first.Length != second.Width);
-        }
-
-        #endregion
+      
     }
 }

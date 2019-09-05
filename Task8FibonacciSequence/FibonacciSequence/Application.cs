@@ -23,7 +23,7 @@ namespace FibonacciSequence
         {
             try
             {
-                Operation op = Validation.GetValidArgs<Operation>(args);
+                Operation op = Validation.GetValidOperation<Operation>(args);
 
                 switch (op)
                 {
@@ -32,14 +32,17 @@ namespace FibonacciSequence
                         break;
                     
                     case Operation.Fibonacci:
-                        int sequenceStart = Validation.ParsePositiveNumber(args[0], Settings.NUMBER_LIMIT);
-                        int sequenceEnd = Validation.ParsePositiveNumber(args[1], Settings.NUMBER_LIMIT);
+                        ISequenceValidation sequenceValidation = new PositiveNumber();
+                        int sequenceStart = sequenceValidation.ParsePositiveNumber(args[0], Settings.NUMBER_LIMIT);
+                        int sequenceEnd = sequenceValidation.ParsePositiveNumber(args[1], Settings.NUMBER_LIMIT);
                         if (sequenceStart > sequenceEnd)
                         {
-                            Validation.ExchangeIntValue(ref sequenceStart, ref sequenceEnd);
+                            sequenceValidation.ExchangeIntValue(ref sequenceStart, ref sequenceEnd);
                         }
+
                         CreatorSequence sequence = new CreatorSequence(new FibonacciGenerator(sequenceStart, sequenceEnd));
                         string fibonacci = string.Join(", ", sequence.Create());
+
                         if (fibonacci.Length > 0)
                         {
                             View.Display(fibonacci);

@@ -7,8 +7,7 @@ namespace EnvelopeAnalyzer
     {
         static void Main(string[] args)
         {
-            new Application(new CommandLineValidation(), 
-                new ConsoleUI()).Run();      
+            new Application(new ConsoleUI()).Run();      
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using ViewController;
 using ConsoleArgsValidation;
@@ -20,14 +21,15 @@ namespace TriangleSort
 
         public void Run()
         {
-            SortedSet<Triangle> myTriangles = new SortedSet<Triangle>(new SortTrianglesBySquare());
+                      
+            List<Triangle> myTriangles = new List<Triangle>();
 
             do
             {
                 string args = View.GetStringData(Settings.INVITATION);
                 try
                 {
-                    myTriangles.Add(TriangleFactory.Create(Validation, args));
+                    myTriangles.Add(Triangle.Create(Validation, args));
                 }
                 catch(Exception ex)
                 {
@@ -38,7 +40,11 @@ namespace TriangleSort
 
             View.Display(Settings.TITLE);
 
-            foreach (var k in myTriangles)
+            var sortedTriangles = from triangle in myTriangles
+                                  orderby triangle.Square
+                                  select triangle;
+
+            foreach (var k in sortedTriangles)
             {
                 View.Display(k.ToString());
             }

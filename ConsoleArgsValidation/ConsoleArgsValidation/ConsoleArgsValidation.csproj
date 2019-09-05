@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandLineValidation.cs" />
+    <Compile Include="ISequenceValidation.cs" />
     <Compile Include="IValid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PositiveNumber.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

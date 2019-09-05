@@ -1,23 +1,19 @@
-﻿using System;
-
-namespace Task6TicketAnalyzer
+﻿namespace Task6TicketAnalyzer
 {
     class Ticket
     {
-        public uint Start { get; set; }
+        public byte Power { get; set; }
 
-        public uint End { get; set; }
 
         public IAlgorithmTicket Algorith {private get; set; }
 
-        public Ticket(uint start, uint end, IAlgorithmTicket algorith)
+        public Ticket(byte power,  IAlgorithmTicket algorith)
         {
             Algorith = algorith;
-            Start = start;
-            End = end;
+            Power = power;
         }
 
-        public int GetAllLuckyNumber() => Algorith.GetAllLucky(Start,End);  
+        public int GetAllLuckyNumber() => Algorith.GetAllLucky(Power);  
   
 
     }

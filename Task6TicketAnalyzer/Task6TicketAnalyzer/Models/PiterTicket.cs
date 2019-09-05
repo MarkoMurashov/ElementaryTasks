@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task6TicketAnalyzer
 {
     class PiterTicket: IAlgorithmTicket
     {       
-        public int GetAllLucky(uint start, uint max)
+        public int GetAllLucky(byte power)
         {
             int result = 0;
-            for (uint i = start; i <= max; i++)
+            for (uint i = 0; i <= Math.Pow(power, 10); i++)
             {
                 if (getParityNumsSum(i, false) == getParityNumsSum(i, true))
                 {

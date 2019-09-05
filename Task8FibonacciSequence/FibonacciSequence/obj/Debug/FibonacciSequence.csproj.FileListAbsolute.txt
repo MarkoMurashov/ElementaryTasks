@@ -35,3 +35,17 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSeq
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\SequenceGenerator.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\ViewController.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.exe.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.exe
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\FibonacciSequence.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\SequenceGenerator.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\ViewController.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\SequenceGenerator.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\bin\Debug\ViewController.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task8FibonacciSequence\FibonacciSequence\obj\Debug\FibonacciSequence.csproj.CopyComplete

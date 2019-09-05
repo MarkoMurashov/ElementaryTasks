@@ -10,7 +10,7 @@ namespace Boards
 {
     static class ViewContollerExtension
     {
-        public static void PrintBoard(this IView view, Board board)
+        public static void PrintBoard(this IView view, IBoard board)
         {
             for (int i = 0; i < board.Cells.GetLength(0); i++)
             {

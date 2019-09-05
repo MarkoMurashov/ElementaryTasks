@@ -23,8 +23,8 @@ namespace Boards
 
             try
             {
-                Operation op = Validation.GetValidArgs<Operation>(args);
-               
+                Operation op = Validation.GetValidOperation<Operation>(args);
+
 
                 switch (op)
                 {
@@ -33,10 +33,8 @@ namespace Boards
                         break;
 
                     case Operation.Print:
-                        int firstIndex = Validation.GetValidIntArg(args[0]);
-                        int secondIndex = Validation.GetValidIntArg(args[1]);
-
-                        View.PrintBoard(Board.getBoard(firstIndex, secondIndex));                        
+                        IBoard board = Validation.GetValidBoard(args[0], args[1]);
+                        View.PrintBoard(board);                        
                         break;
                     
                 }

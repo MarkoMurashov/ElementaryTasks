@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 
 using ViewController;
 using ConsoleArgsValidation;
@@ -9,58 +7,75 @@ namespace Task6TicketAnalyzer
 {
     class Application
     {
+        #region Properties
+
         private IValid Validation { get; set; }
 
         private IView View { get; set; }
 
-        public Application(IValid valid, IView view)
+        public ISourceAlgorithm TypeAlgorithm { get; set; }
+
+        public Application(IValid valid, IView view, ISourceAlgorithm typeAlgorithm)
         {
             Validation = valid;
             View = view;
+            TypeAlgorithm = typeAlgorithm;
         }
+
+        #endregion
 
         public void Run(string[] args)
         {
-            string algType = string.Empty;
-
-            using (StreamReader reader = new StreamReader(args[0]))
+            try
             {
-                algType = reader.ReadLine();               
-            }
+                Operation operation = Validation.GetValidOperation<Operation>(args);
 
-            Enum.TryParse(algType, out TicketType type);
-            uint start;
-            uint end;
-            string luckyNumber;
-            Ticket ticket;
+                switch (operation)
+                {
+                    case Operation.Instruction:
+                        View.Display(Settings.INSTRUCTION);
+                        break;
+
+                    case Operation.Analyze:
+                        ExecuteAlgorithm(args[0]);
+                        break;
+
+                    default:
+                        View.Display(Settings.INSTRUCTION);
+                        break;
+                }
+                View.Saybye();
+            }
+            catch(Exception ex)
+            {
+                View.DisplayError(ex);
+            }         
+        }
+
+        private void ExecuteAlgorithm(string path)
+        {
+            Validation.GetValidPath(path);
+            TicketType type = TypeAlgorithm.GetAlgType(path);
+
+            byte power = Validation.
+                TryPowerParse(View.GetStringData(Settings.ENTER_POWER));
+
+            power /= 2;
+
             switch (type)
             {
                 case TicketType.Moscow:
-                    start = 100;
-                    end = 999;
-                    ticket = new Ticket(start, end, new MoscowTicket());
-                    luckyNumber = string.Format("{0}", ticket.GetAllLuckyNumber());
-                    View.Display(luckyNumber);
+                    View.PrintLuckyTicket(new Ticket(power, new MoscowTicket()));
                     break;
 
                 case TicketType.Piter:
-                    start = 100;
-                    end = 999;
-                    ticket = new Ticket(start, end, new MoscowTicket());
-                    luckyNumber = string.Format("{0}", ticket.GetAllLuckyNumber());
-                    View.Display(luckyNumber);
+                    View.PrintLuckyTicket(new Ticket(power, new MoscowTicket()));
                     break;
-
 
                 default:
-                    Console.WriteLine("12345");
+                    View.Display(Settings.INSTRUCTION);
                     break;
-
             }
-           
-
-            View.Saybye();
         }
-     
     }
 }
