@@ -12,15 +12,15 @@ namespace ConsoleArgsValidation
         {
             if (!int.TryParse(str, out int num))
             {
-                throw new Exception("Ooops ... Data was incorrectly entered.");
+                throw new FormatException("Ooops ... Data was incorrectly entered.");
             }
             if (num > maxValue)
             {
-                throw new Exception("Very big number :(");
+                throw new ArgumentOutOfRangeException("Very big number :(");
             }
             if (num < 0)
             {
-                throw new Exception("Please enter a positive integer number.");
+                throw new ArgumentOutOfRangeException("Please enter a positive integer number.");
             }
 
             return num;

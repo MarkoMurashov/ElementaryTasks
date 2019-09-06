@@ -15,7 +15,7 @@ namespace TriangleSort
             string[] parser = str.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (!(parser.Length > 3))
             {
-                throw new Exception("Wrong number of args :(");
+                throw new ArgumentException("Wrong number of args :(");
             }
             name = parser[0];
 

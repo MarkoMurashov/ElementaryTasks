@@ -21,3 +21,16 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\b
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ViewController.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ViewController.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.exe.config
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\EnvelopeAnalyzer.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ViewController.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\bin\Debug\ViewController.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.csproj.CopyComplete
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task2EnvelopeAnalyzer\EnvelopeAnalyzer\obj\Debug\EnvelopeAnalyzer.pdb

@@ -30,12 +30,9 @@ C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSeq
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NumericalSequence.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ConsoleArgsValidation.dll
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceGenerator.dll
-C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceValidation.dll
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ViewController.dll
-C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\Assistant.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ConsoleArgsValidation.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceGenerator.pdb
-C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\SequenceValidation.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\ViewController.pdb
 C:\Users\utilisateur\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NumericalSequence.exe.config

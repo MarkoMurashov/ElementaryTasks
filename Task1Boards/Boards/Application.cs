@@ -40,7 +40,11 @@ namespace Boards
                 }
 
             }
-            catch (Exception ex)
+            catch (FormatException ex)
+            {
+                View.DisplayError(ex);
+            }
+            catch (ArgumentOutOfRangeException ex)
             {
                 View.DisplayError(ex);
             }

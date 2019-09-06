@@ -19,3 +19,15 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debu
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ConsoleArgsValidation.pdb
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ViewController.pdb
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\Task4FileParser.csproj.CopyComplete
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\FileParser.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\FileParser.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ConsoleArgsValidation.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ViewController.dll
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\Assistant.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ConsoleArgsValidation.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\bin\Debug\ViewController.pdb
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\Task4FileParser.csprojAssemblyReference.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\Task4FileParser.csproj.CoreCompileInputs.cache
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\Task4FileParser.csproj.CopyComplete
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\FileParser.exe
+C:\Users\utilisateur\Desktop\ElementaryTasks\Task4FileParser\Task4FileParser\obj\Debug\FileParser.pdb

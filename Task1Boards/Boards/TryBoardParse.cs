@@ -17,11 +17,11 @@ namespace Boards
 
             if (numberOfRows <= 0 || NumverOfColumns <= 0)
             {
-                throw new Exception(Settings.INSTRUCTION);
+                throw new ArgumentOutOfRangeException(Settings.INSTRUCTION);
             }
             if (numberOfRows > 30 || NumverOfColumns > 100)
             {
-                throw new Exception(Settings.BIG_NUM);
+                throw new ArgumentOutOfRangeException(Settings.BIG_NUM);
             }
 
             return new Board(numberOfRows, NumverOfColumns);

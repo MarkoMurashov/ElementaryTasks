@@ -9,7 +9,7 @@ namespace ConsoleArgsValidation
         {
             if (!Enum.IsDefined(typeof(T), args.Length))
             {
-                throw new Exception("Ooops ... Data was incorrectly entered.");
+                throw new FormatException("Ooops ... Data was incorrectly entered.");
             }
 
             return (T)Enum.ToObject(typeof(T), args.Length);
@@ -19,7 +19,7 @@ namespace ConsoleArgsValidation
         {
             if (!float.TryParse(str, out float result))
             {
-                throw new Exception("Wrong float data");
+                throw new FormatException("Wrong float data");
             }
             return result;
         }
@@ -28,7 +28,7 @@ namespace ConsoleArgsValidation
         {
             if (!int.TryParse(str, out int result))
             {
-                throw new Exception("Wrong int data");
+                throw new FormatException("Wrong int data");
             }
             return result;
         }
@@ -37,7 +37,7 @@ namespace ConsoleArgsValidation
         {
             if (!byte.TryParse(str, out byte result))
             {
-                throw new Exception("Wrong byte data");
+                throw new FormatException("Wrong byte data");
             }
             return result;
         }
@@ -46,7 +46,7 @@ namespace ConsoleArgsValidation
         {
             if (!File.Exists(str))
             {
-                throw new Exception("Ooops ... Path was incorrectly entered.");
+                throw new FormatException("Ooops ... Path was incorrectly entered.");
             }
             return true;
         }

@@ -31,11 +31,15 @@ namespace TriangleSort
                 {
                     myTriangles.Add(Triangle.Create(Validation, args));
                 }
-                catch(Exception ex)
+                catch(FormatException ex)
                 {
                     View.DisplayError(ex);
                 }
-                
+                catch (ArgumentException ex)
+                {
+                    View.DisplayError(ex);
+                }
+
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
 
             View.Display(Settings.TITLE);

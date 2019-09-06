@@ -44,7 +44,7 @@ namespace EnvelopeAnalyzer
             float length = valid.GetValidFloatArg(strLength);
             if (width <= 0.0 || length <= 0.0)
             {
-                throw new Exception(Settings.NEGATIVE_DATA);
+                throw new ArgumentOutOfRangeException(Settings.NEGATIVE_DATA);
             }
 
             return new Envelope(width, length);
