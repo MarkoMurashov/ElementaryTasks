@@ -21,5 +21,7 @@ namespace EnvelopeAnalyzer
 
         public const string ANSWER_NO_EQUALS = "The envelopes will NOT fit, because envelopes are equals";
 
+        public const string NO_ANSWER = "No answer";
+
     }
 }

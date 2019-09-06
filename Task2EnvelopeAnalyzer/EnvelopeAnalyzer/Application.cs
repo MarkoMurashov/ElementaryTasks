@@ -7,7 +7,6 @@ namespace EnvelopeAnalyzer
 {
     class Application
     {
-
         private IView View { get; set; }
 
         public Application(IView view)
@@ -22,8 +21,8 @@ namespace EnvelopeAnalyzer
             {
                 try
                 {
-                    IEnvelope first = InitializeEnvelope(1);
-                    IEnvelope second = InitializeEnvelope(2);
+                    Envelope first = InitializeEnvelope(1);
+                    Envelope second = InitializeEnvelope(2);
 
                     Status status = first.Compare(second);
 
@@ -44,6 +43,9 @@ namespace EnvelopeAnalyzer
                         case Status.Equal:
                             View.Display(Settings.ANSWER_NO_EQUALS);
                             break;
+
+                        default:
+                            throw new ArgumentOutOfRangeException(Settings.NO_ANSWER);
                     }
                 }
                 catch (FormatException ex)

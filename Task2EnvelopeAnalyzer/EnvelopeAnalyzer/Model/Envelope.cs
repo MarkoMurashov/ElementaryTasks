@@ -4,7 +4,7 @@ using ConsoleArgsValidation;
 
 namespace EnvelopeAnalyzer
 {
-    class Envelope: IEnvelope
+    class Envelope
     {
         public float Width { get; set; }
 
@@ -16,7 +16,7 @@ namespace EnvelopeAnalyzer
             Length = length;
         }
 
-        public Status Compare(IEnvelope second)
+        public Status Compare(Envelope second)
         {
             if ((Length > second.Length && Width > second.Width)
                  || (Length > second.Width && Width > second.Length))
@@ -29,6 +29,7 @@ namespace EnvelopeAnalyzer
             {
                 return Status.SecondInFirst;
             }
+
             if (Width == second.Width && Length == second.Width)
             {
                 return Status.Equal;
