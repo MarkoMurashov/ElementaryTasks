@@ -3,56 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 
 using ViewController;
-using ConsoleArgsValidation;
 
 namespace TriangleSort
 {
     class Application
     {
-        private IValid Validation { get; set; }
-
         private IView View { get; set; }
 
-        public Application(IValid valid, IView view)
+        public Application(IView view)
         {
-            Validation = valid;
             View = view;
         }
 
         public void Run()
-        {
-                      
-            List<Triangle> myTriangles = new List<Triangle>();
+        {                     
+            List<IFigure> myTriangles = new List<IFigure>();
 
             do
             {
                 string args = View.GetStringData(Settings.INVITATION);
                 try
                 {
-                    myTriangles.Add(Triangle.Create(Validation, args));
+                    IFigureFactory factory = new TriangleParser(args).TryParse();
+                    myTriangles.Add(factory.Create());
                 }
                 catch(FormatException ex)
                 {
-                    View.DisplayError(ex);
+                    View.Display(ex.Message);
                 }
                 catch (ArgumentException ex)
                 {
-                    View.DisplayError(ex);
+                    View.Display(ex.Message);
                 }
 
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
 
-            View.Display(Settings.TITLE);
 
             var sortedTriangles = from triangle in myTriangles
                                   orderby triangle.Square
                                   select triangle;
 
-            foreach (var k in sortedTriangles)
+            if (sortedTriangles.Count() == 0)
             {
-                View.Display(k.ToString());
+                View.Display(Settings.NO_ELEMENTS); 
             }
-
+            else
+            {
+                View.Display(Settings.TITLE);
+                foreach (var k in sortedTriangles)
+                {
+                    View.Display(k.ToString());
+                }
+            }
+                       
             View.Saybye();
         }
     }

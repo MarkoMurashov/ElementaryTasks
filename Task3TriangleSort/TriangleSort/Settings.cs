@@ -13,7 +13,14 @@ namespace TriangleSort
 
         public const string WRONG_NUMBER_OF_ARGS = "Wrong number of args :(";
 
-
         public const string TITLE = "============= Triangles list: ===============";
+
+        public const string NO_ELEMENTS = "No triangles in the list";
+
+        public const ushort SIDES_NUMBER = 3;
+
+        public const string WRONG_ARG_NUMBER = "Wrong number of args :(";
+
+        public const string NEGATIVE_NUMBER_ERROR = "Please enter a positive number";
     }
 }

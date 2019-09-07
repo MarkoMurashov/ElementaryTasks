@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSortTests\\TriangleSortTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSortTests\\TriangleSortTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSortTests\\TriangleSortTests.csproj",
+        "projectName": "TriangleSortTests",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSortTests\\TriangleSortTests.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSortTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSort\\TriangleSort.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSort\\TriangleSort.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSort\\TriangleSort.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSort\\TriangleSort.csproj",
+        "projectName": "TriangleSort",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\ElementaryTasks\\Task3TriangleSort\\TriangleSort\\TriangleSort.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
