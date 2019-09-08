@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
-    public enum Operation
+    public enum Status
     {
         Instruction = 0,
         Quadtratic = 1

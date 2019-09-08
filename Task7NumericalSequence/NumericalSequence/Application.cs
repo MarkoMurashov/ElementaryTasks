@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using ViewController;
 
 namespace NumericalSequence
@@ -15,30 +15,21 @@ namespace NumericalSequence
 
         public void Run(string[] args)
         {
+            string sequence = string.Empty;
+            CommandLineParser parser = new CommandLineParser(args);
             try
             {
-                CommandLineParser parser = new CommandLineParser(args);
-                Operation op = parser.GetOperation<Operation>();
-
+                Status op = parser.GetOperation<Status>();
+                    
                 switch (op)
                 {
-                    case Operation.Instruction:
+                    case Status.Instruction:
                         View.Display(Settings.INSTRUCTION);
+                        return;
+                    case Status.Quadtratic:
+                        sequence = GetQuadratic(args[0]);
                         break;
-                    case Operation.Quadtratic:
-                        string sequence = GetQuadratic(args[0]);
-
-                        if (sequence.Length > 0)
-                        {
-                            View.Display(sequence);
-                            break;
-                        }
-                        
-                        View.Display(Settings.NO_MATCH);
-                        break;
-                    
                 }
-                View.Saybye();
             }
             catch (FormatException ex)
             {
@@ -52,6 +43,17 @@ namespace NumericalSequence
             {
                 View.DisplayError(ex);
             }
+
+
+            if (sequence.Length > 0)
+            {
+                View.Display(sequence);
+            }
+            else
+            {
+                View.Display(Settings.NO_MATCH);
+            }
+            View.Saybye();
         }
 
         private string  GetQuadratic(string arg)
@@ -61,8 +63,7 @@ namespace NumericalSequence
 
             SequenceGenerator sequence = new SequenceGenerator(new QuadraticSequence(sequenceEnd));
 
-            return string.Join(", ", sequence.Create());
- 
+            return string.Join(", ", sequence.Create()); 
         }
     }
 }
