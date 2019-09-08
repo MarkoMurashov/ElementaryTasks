@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalSequence", "NumericalSequence\NumericalSequence.csproj", "{506139AF-7C03-43FE-9F7A-F9FD738C1556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalSequenceTest", "NumericalSequenceTest\NumericalSequenceTest.csproj", "{CFA7B01C-DDBD-4AF3-A631-F83BB007D80E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{506139AF-7C03-43FE-9F7A-F9FD738C1556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506139AF-7C03-43FE-9F7A-F9FD738C1556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506139AF-7C03-43FE-9F7A-F9FD738C1556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA7B01C-DDBD-4AF3-A631-F83BB007D80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA7B01C-DDBD-4AF3-A631-F83BB007D80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA7B01C-DDBD-4AF3-A631-F83BB007D80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA7B01C-DDBD-4AF3-A631-F83BB007D80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

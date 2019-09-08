@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
-    interface ISequence
+    public interface ISequence
     {
         IEnumerable<int> GenerateSequence();
     }

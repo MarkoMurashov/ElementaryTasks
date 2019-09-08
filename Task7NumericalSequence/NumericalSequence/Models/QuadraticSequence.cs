@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
-    class QuadraticSequence : ISequence
+    public class QuadraticSequence : ISequence
     {
         public int End { get; private set; }
 

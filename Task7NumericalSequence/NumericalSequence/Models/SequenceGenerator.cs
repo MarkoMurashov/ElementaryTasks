@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
-    class SequenceGenerator
+    public class SequenceGenerator
     {
         public ISequence Sequence { private get; set; }
 
