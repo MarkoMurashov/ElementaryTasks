@@ -8,19 +8,19 @@ namespace TriangleSort
 {
     public abstract class FigureParser
     {
-        protected string[] Arguments { get; set; }
+        protected string[] Arguments { get; private set; }
        
         public FigureParser(string args)
         {
             Arguments = args.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
         }
 
-        protected bool IsCorrectArgs()
+        public bool IsCorrectArgs()
         {
             return Arguments.Length == Settings.SIDES_NUMBER + 1;
         }
 
-        protected string GetName()
+        public string GetName()
         {
             if (Arguments.Length > 0)
             {
@@ -29,7 +29,7 @@ namespace TriangleSort
             throw new ArgumentException(Settings.WRONG_NUMBER_OF_ARGS);
         }
 
-        protected double[] GetSides()
+        public double[] GetSides()
         {           
             double[] sides = new double[Arguments.Length - 1];
             for (int i = 0; i < sides.Length; i++)

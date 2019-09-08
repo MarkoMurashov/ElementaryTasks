@@ -11,5 +11,7 @@ namespace TriangleSort
         string Name { get; }
         double[] Sides { get; }
         double Square { get; }
+
+        bool Equals(object obj);
     }
 }

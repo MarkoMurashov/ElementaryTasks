@@ -44,6 +44,27 @@ namespace TriangleSort
         {
             return string.Format($"[{Name}]: {Square} cm");
         }
+
+        bool IFigure.Equals(object obj)
+        {
+            if (obj is Triangle triangle)
+            {
+                bool equal = true;
+                for (int i = 0; i < Sides.Length; i++)
+                {
+                    if (Sides[i] != triangle.Sides[i])
+                    {
+                        equal = false;
+                        break;
+                    }
+                }
+
+
+                return Name == triangle.Name && equal;
+            }
+
+            throw new InvalidCastException();
+        }
        
     }
 }

@@ -16,4 +16,10 @@
     <ProjectReference Include="..\TriangleSort\TriangleSort.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="ViewController">
+      <HintPath>..\..\ViewController\ViewController\bin\Debug\ViewController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

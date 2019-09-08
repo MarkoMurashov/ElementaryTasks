@@ -11,7 +11,8 @@
           "Microsoft.NET.Test.Sdk": "16.0.1",
           "TriangleSort": "1.0.0",
           "xunit": "2.4.0",
-          "xunit.runner.visualstudio": "2.4.0"
+          "xunit.runner.visualstudio": "2.4.0",
+          "ViewController": "1.0.0.0"
         },
         "runtime": {
           "TriangleSortTests.dll": {}
@@ -1059,14 +1060,11 @@
         }
       },
       "TriangleSort/1.0.0": {
-        "dependencies": {
-          "ViewController": "1.0.0.0"
-        },
         "runtime": {
           "TriangleSort.exe": {}
         }
       },
-      "ViewController.Reference/1.0.0.0": {
+      "ViewController/1.0.0.0": {
         "runtime": {
           "ViewController.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -1619,7 +1617,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ViewController.Reference/1.0.0.0": {
+    "ViewController/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

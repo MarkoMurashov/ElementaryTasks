@@ -20,6 +20,11 @@ namespace TriangleSort
 
         public IFigure Create()
         {
+            if(Sides == null)
+            {
+                throw new InvalidCastException();
+            }
+
            return new Triangle(Name, Sides);
         }
 

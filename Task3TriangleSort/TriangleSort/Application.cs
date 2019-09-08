@@ -6,7 +6,7 @@ using ViewController;
 
 namespace TriangleSort
 {
-    class Application
+    public class Application
     {
         private IView View { get; set; }
 
@@ -38,16 +38,9 @@ namespace TriangleSort
 
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
 
+            var sortedTriangles = SortBySquare(myTriangles);
 
-            var sortedTriangles = from triangle in myTriangles
-                                  orderby triangle.Square
-                                  select triangle;
-
-            if (sortedTriangles.Count() == 0)
-            {
-                View.Display(Settings.NO_ELEMENTS); 
-            }
-            else
+            if (sortedTriangles.Count() != 0)
             {
                 View.Display(Settings.TITLE);
                 foreach (var k in sortedTriangles)
@@ -55,8 +48,21 @@ namespace TriangleSort
                     View.Display(k.ToString());
                 }
             }
-                       
+            else
+            {                
+                View.Display(Settings.NO_ELEMENTS);
+            }
+
             View.Saybye();
+        }
+
+        public IOrderedEnumerable<IFigure> SortBySquare(IEnumerable<IFigure> myTriangles)
+        {
+            var sortedTriangles = from triangle in myTriangles
+                                  orderby triangle.Square
+                                  select triangle;
+
+            return sortedTriangles;           
         }
     }
 }
