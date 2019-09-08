@@ -15,5 +15,7 @@ namespace NumericalSequence
 
         public const int NUMBER_LIMIT = 10000;
 
+        public const string NULL_ERROR = "null was passed";
+
     }
 }

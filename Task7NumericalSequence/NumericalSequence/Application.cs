@@ -1,20 +1,15 @@
 ﻿using System;
 
-using ConsoleArgsValidation;
 using ViewController;
-using SequenceGenerator;
 
 namespace NumericalSequence
 {
     class Application
     {
-        private IValid Validation { get; set; }
-
         private IView View { get; set; }
 
-        public Application(IValid valid, IView view)
+        public Application(IView view)
         {
-            Validation = valid;
             View = view;
         }
 
@@ -22,7 +17,8 @@ namespace NumericalSequence
         {
             try
             {
-                Operation op = Validation.GetValidOperation<Operation>(args);
+                CommandLineParser parser = new CommandLineParser(args);
+                Operation op = parser.GetOperation<Operation>();
 
                 switch (op)
                 {
@@ -30,27 +26,43 @@ namespace NumericalSequence
                         View.Display(Settings.INSTRUCTION);
                         break;
                     case Operation.Quadtratic:
-                        ISequenceValidation sequenceValidation = new PositiveNumber();
-                        int sequenceEnd = sequenceValidation.ParsePositiveNumber(args[0],Settings.NUMBER_LIMIT);
+                        string sequence = GetQuadratic(args[0]);
 
-                        CreatorSequence sequence = new CreatorSequence(new QuadraticSequence(sequenceEnd));
-                        string fibonacci = string.Join(", ", sequence.Create());
-
-                        if (fibonacci.Length > 0)
+                        if (sequence.Length > 0)
                         {
-                            View.Display(fibonacci);
+                            View.Display(sequence);
                             break;
                         }
                         
                         View.Display(Settings.NO_MATCH);
                         break;
+                    
                 }
                 View.Saybye();
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 View.DisplayError(ex);
             }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                View.DisplayError(ex);
+            }
+            catch (InvalidCastException ex)
+            {
+                View.DisplayError(ex);
+            }
+        }
+
+        private string  GetQuadratic(string arg)
+        {
+            ISequenceParser sequenceValidation = new NumberParser(Settings.NUMBER_LIMIT);
+            int sequenceEnd = sequenceValidation.TryParse(arg);
+
+            SequenceGenerator sequence = new SequenceGenerator(new QuadraticSequence(sequenceEnd));
+
+            return string.Join(", ", sequence.Create());
+ 
         }
     }
 }

@@ -33,12 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConsoleArgsValidation">
-      <HintPath>..\..\ConsoleArgsValidation\ConsoleArgsValidation\bin\Debug\ConsoleArgsValidation.dll</HintPath>
-    </Reference>
-    <Reference Include="SequenceGenerator">
-      <HintPath>..\..\SequenceGenerator\SequenceGenerator\bin\Debug\SequenceGenerator.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,14 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Operation.cs" />
+    <Compile Include="Parsers\CommandLineParser.cs" />
+    <Compile Include="Interfaces\ISequence.cs" />
+    <Compile Include="Interfaces\ISequenceParser.cs" />
+    <Compile Include="Enums\Operation.cs" />
+    <Compile Include="Parsers\NumberParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuadraticSequence.cs" />
+    <Compile Include="Models\QuadraticSequence.cs" />
+    <Compile Include="Models\SequenceGenerator.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

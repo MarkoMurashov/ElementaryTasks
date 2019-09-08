@@ -1,5 +1,4 @@
-﻿using ConsoleArgsValidation;
-using ViewController;
+﻿using ViewController;
 
 namespace NumericalSequence
 {
@@ -7,7 +6,7 @@ namespace NumericalSequence
     {
         static void Main(string[] args)
         {
-            new Application(new CommandLineValidation(), new ConsoleUI()).Run(args);
+            new Application(new ConsoleUI()).Run(args);
         }
     }
 }
