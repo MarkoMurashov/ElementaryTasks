@@ -8,7 +8,7 @@ namespace NumericalSequence
 {
     public interface ISequenceParser
     {
-        int TryParse(string str);
+        int Parse(string str);
 
     }
 }

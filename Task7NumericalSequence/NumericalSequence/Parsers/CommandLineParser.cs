@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
-    class CommandLineParser
+    public class CommandLineParser
     {
         private string[] Arguments { get; set; }
 

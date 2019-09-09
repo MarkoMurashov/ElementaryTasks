@@ -35,7 +35,7 @@ namespace TriangleSortTests
             string expected = string.Join("", figures2);
 
             //act
-            Application app = new Application(new ConsoleUI());
+            Application app = new Application(new ConsoleUI(), null);
             var query = app.SortBySquare(figures);
             string actual = string.Join("", query);
 

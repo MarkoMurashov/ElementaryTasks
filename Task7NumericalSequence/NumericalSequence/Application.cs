@@ -1,32 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
+
+using NLog;
 using ViewController;
 
 namespace NumericalSequence
 {
-    class Application
+    public class Application
     {
         private IView View { get; set; }
 
-        public Application(IView view)
+        private ILogger Logger { get; set; }
+
+        public Application(IView view, ILogger log)
         {
             View = view;
+            Logger = log;
         }
 
         public void Run(string[] args)
         {
+            Logger.Info(Settings.APP_START);
+
             string sequence = string.Empty;
             CommandLineParser parser = new CommandLineParser(args);
             try
             {
-                Status op = parser.GetOperation<Status>();
+                Operation op = parser.GetOperation<Operation>();
                     
                 switch (op)
                 {
-                    case Status.Instruction:
+                    case Operation.ShowInstruction:
                         View.Display(Settings.INSTRUCTION);
                         return;
-                    case Status.Quadtratic:
+                    case Operation.Quadtratic:
                         sequence = GetQuadratic(args[0]);
                         break;
                 }
@@ -34,32 +40,37 @@ namespace NumericalSequence
             catch (FormatException ex)
             {
                 View.DisplayError(ex);
+                Logger.Error(ex.Message);
             }
             catch (ArgumentOutOfRangeException ex)
             {
                 View.DisplayError(ex);
+                Logger.Error(ex.Message);
             }
             catch (InvalidCastException ex)
             {
                 View.DisplayError(ex);
+                Logger.Error(ex.Message);
             }
 
 
             if (sequence.Length > 0)
             {
                 View.Display(sequence);
+                Logger.Info(Settings.APP_GENERATE);
             }
             else
             {
                 View.Display(Settings.NO_MATCH);
+                Logger.Info(Settings.APP_NO_RESULT);
             }
             View.Saybye();
         }
 
-        private string  GetQuadratic(string arg)
+        public string  GetQuadratic(string arg)
         {
             ISequenceParser sequenceValidation = new NumberParser(Settings.NUMBER_LIMIT);
-            int sequenceEnd = sequenceValidation.TryParse(arg);
+            int sequenceEnd = sequenceValidation.Parse(arg);
 
             SequenceGenerator sequence = new SequenceGenerator(new QuadraticSequence(sequenceEnd));
 

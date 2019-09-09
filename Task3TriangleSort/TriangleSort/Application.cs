@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using NLog;
 using ViewController;
 
 namespace TriangleSort
@@ -10,13 +11,18 @@ namespace TriangleSort
     {
         private IView View { get; set; }
 
-        public Application(IView view)
+        private ILogger Logger { get; set; }
+
+        public Application(IView view,  ILogger logger)
         {
             View = view;
+            Logger = logger;
         }
 
         public void Run()
-        {                     
+        {
+            Logger.Info(Settings.APP_START);
+
             List<IFigure> myTriangles = new List<IFigure>();
 
             do
@@ -30,10 +36,12 @@ namespace TriangleSort
                 catch(FormatException ex)
                 {
                     View.Display(ex.Message);
+                    Logger.Error(ex, ex.Message);
                 }
                 catch (ArgumentException ex)
                 {
                     View.Display(ex.Message);
+                    Logger.Error(ex, ex.Message);
                 }
 
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
@@ -47,10 +55,14 @@ namespace TriangleSort
                 {
                     View.Display(k.ToString());
                 }
+
+                Logger.Info(Settings.APP_SORT);
             }
             else
             {                
                 View.Display(Settings.NO_ELEMENTS);
+
+                Logger.Info(Settings.APP_NO_SORT);
             }
 
             View.Saybye();

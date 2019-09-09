@@ -1,0 +1,8 @@
+2019-09-09 17:05:04.6615|INFO|NumericalSequence.Program|App was ran
+2019-09-09 17:05:04.8051|INFO|NumericalSequence.Program|Sequence was created
+2019-09-09 17:05:42.1469|INFO|NumericalSequence.Program|App was ran
+2019-09-09 17:05:42.8276|ERROR|NumericalSequence.Program|Ooops ... Data was incorrectly entered.
+2019-09-09 17:05:42.8276|ERROR|NumericalSequence.Program|Ooops ... Data was incorrectly entered.
+2019-09-09 17:05:42.8465|INFO|NumericalSequence.Program|Sequence was NOT created
+2019-09-09 17:05:52.9252|INFO|NumericalSequence.Program|App was ran
+2019-09-09 17:05:52.9910|INFO|NumericalSequence.Program|Sequence was created

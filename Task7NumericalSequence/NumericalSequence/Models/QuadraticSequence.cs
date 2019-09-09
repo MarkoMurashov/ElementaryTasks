@@ -15,6 +15,7 @@ namespace NumericalSequence
         {
             End = end;
         }
+
         public IEnumerable<int> GenerateSequence()
         {
             for (int i = 1; i * i < End; i++)

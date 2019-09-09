@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "a5a5d42c43e1cb429841cf89fae7fc4c23ac8cc9"
+    "signature": "4f3e9b0c1bdaed843da9b254b64ab6f259cec9b4"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,9 +9,11 @@
       "NumericalSequenceTest/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.0.1",
+          "NLog.Config": "4.6.7",
           "NumericalSequence": "1.0.0",
           "xunit": "2.4.0",
-          "xunit.runner.visualstudio": "2.4.0"
+          "xunit.runner.visualstudio": "2.4.0",
+          "ViewController": "1.0.0.0"
         },
         "runtime": {
           "NumericalSequenceTest.dll": {}
@@ -401,6 +403,21 @@
           }
         }
       },
+      "NLog/4.6.7": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.7.10445"
+          }
+        }
+      },
+      "NLog.Config/4.6.7": {
+        "dependencies": {
+          "NLog": "4.6.7",
+          "NLog.Schema": "4.6.7"
+        }
+      },
+      "NLog.Schema/4.6.7": {},
       "runtime.native.System/4.0.0": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
@@ -1059,14 +1076,11 @@
         }
       },
       "NumericalSequence/1.0.0": {
-        "dependencies": {
-          "ViewController": "1.0.0.0"
-        },
         "runtime": {
           "NumericalSequence.exe": {}
         }
       },
-      "ViewController.Reference/1.0.0.0": {
+      "ViewController/1.0.0.0": {
         "runtime": {
           "ViewController.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -1151,6 +1165,27 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+    },
+    "NLog/4.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xSIzXrIF89Ww6yoJPvyBcu4JLgNiDiEaTT4GyVltZEeVIvkgSm9J/srUy1Yz0EXwbTv502l8knoCFrgNc/MUMA==",
+      "path": "nlog/4.6.7",
+      "hashPath": "nlog.4.6.7.nupkg.sha512"
+    },
+    "NLog.Config/4.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vgf2nMi+L9ZWv9YNmsuS3ur3RTJh52jOMC4W+Fz8njdQ45kshYBWLMGMuXlZl250HNhvUIhi6fxoHBaq2R1o/Q==",
+      "path": "nlog.config/4.6.7",
+      "hashPath": "nlog.config.4.6.7.nupkg.sha512"
+    },
+    "NLog.Schema/4.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-myTROWvjsL2S6tJSZmgYxzJesCa0jWsQ7u/zLkmd3X+N1TU4eUvUfu/rv4WFD3cI9xUR5bgEyrD78rCLekUaQg==",
+      "path": "nlog.schema/4.6.7",
+      "hashPath": "nlog.schema.4.6.7.nupkg.sha512"
     },
     "runtime.native.System/4.0.0": {
       "type": "package",
@@ -1619,7 +1654,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ViewController.Reference/1.0.0.0": {
+    "ViewController/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

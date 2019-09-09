@@ -41,7 +41,7 @@ namespace TriangleSort
                 }
                 if(sides[i] <= 0)
                 {
-                    throw new ArgumentOutOfRangeException(Settings.NEGATIVE_NUMBER_ERROR);
+                    throw new ArgumentOutOfRangeException(sides[i].ToString(),Settings.NEGATIVE_NUMBER_ERROR);
                 }
             }
 

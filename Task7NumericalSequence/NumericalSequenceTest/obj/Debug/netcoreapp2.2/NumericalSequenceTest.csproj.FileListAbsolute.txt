@@ -18,3 +18,4 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequenceTest\obj\Debug\netcoreapp2.2\NumericalSequenceTest.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequenceTest\obj\Debug\netcoreapp2.2\NumericalSequenceTest.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequenceTest\obj\Debug\netcoreapp2.2\NumericalSequenceTest.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequenceTest\bin\Debug\netcoreapp2.2\NLog.config

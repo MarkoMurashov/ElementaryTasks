@@ -1,0 +1,30 @@
+2019-09-09 14:44:01.0096|INFO|TriangleSort.Program|App was ran
+2019-09-09 14:44:01.6060|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:44:01.6060|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:44:01.7766|INFO|TriangleSort.Program|No one triangle were added
+2019-09-09 14:44:25.6647|INFO|TriangleSort.Program|App was ran
+2019-09-09 14:44:26.2980|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:44:26.2980|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:44:26.4606|INFO|TriangleSort.Program|No one triangle were added
+2019-09-09 14:49:49.5410|INFO|TriangleSort.Program|App was ran
+2019-09-09 14:49:49.8472|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:49:49.8472|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:49:50.0207|INFO|TriangleSort.Program|No one triangle were added
+2019-09-09 14:50:50.4361|INFO|TriangleSort.Program|App was ran
+2019-09-09 14:50:58.6591|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:50:58.6591|ERROR|TriangleSort.Program|Wrong number of args :(
+2019-09-09 14:51:04.8007|ERROR|TriangleSort.Program|Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: Please enter a positive number
+2019-09-09 14:51:04.8007|ERROR|TriangleSort.Program|Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: Please enter a positive number
+2019-09-09 14:51:14.4967|INFO|TriangleSort.Program|Triangles were sorted
+2019-09-09 14:52:39.5861|INFO|TriangleSort.Program|App was ran
+2019-09-09 14:52:44.8770|ERROR|TriangleSort.Program|Please enter a positive number
+Имя параметра: 0
+2019-09-09 14:52:44.8770|ERROR|TriangleSort.Program|Please enter a positive number
+Имя параметра: 0
+2019-09-09 14:53:03.1690|ERROR|TriangleSort.Program|Please enter a positive number
+Имя параметра: -8
+2019-09-09 14:53:03.1690|ERROR|TriangleSort.Program|Please enter a positive number
+Имя параметра: -8
+2019-09-09 14:53:06.2069|INFO|TriangleSort.Program|No one triangle were added

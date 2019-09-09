@@ -15,7 +15,7 @@ namespace NumericalSequence
             MaxValue = maxValue;
         }
 
-        public int TryParse(string number)
+        public int Parse(string number)
         {
             if (!int.TryParse(number, out int num))
             {

@@ -45,3 +45,6 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.exe
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\obj\Debug\NumericalSequence.pdb
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NLog.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NLog.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task7NumericalSequence\NumericalSequence\bin\Debug\NLog.xml

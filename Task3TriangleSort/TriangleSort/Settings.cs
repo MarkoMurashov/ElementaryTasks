@@ -22,5 +22,11 @@ namespace TriangleSort
         public const string WRONG_ARG_NUMBER = "Wrong number of args :(";
 
         public const string NEGATIVE_NUMBER_ERROR = "Please enter a positive number";
+
+        public const string APP_START = "App was ran";
+
+        public const string APP_SORT = "Triangles were sorted";
+
+        public const string APP_NO_SORT = "No one triangle were added";
     }
 }
