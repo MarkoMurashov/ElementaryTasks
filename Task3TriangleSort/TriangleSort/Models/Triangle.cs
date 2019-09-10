@@ -3,19 +3,19 @@ using System.Linq;
 
 namespace TriangleSort
 {
-    public class Triangle: IFigure
+    public class Triangle : IFigure
     {
         #region Properties
 
         public string Name { get; private set; }
         public double[] Sides { get; private set; }
-       
+
         public double Square
         {
             get
-            {              
+            {
                 double halfPerimeter = Sides.Sum() / 2.0;
-                
+
                 double tmp = 1;
                 foreach (var side in Sides)
                 {
@@ -26,7 +26,9 @@ namespace TriangleSort
             }
         }
 
-#endregion
+        #endregion
+
+        #region Ctor
 
         public Triangle(string name, double[] sides)
         {
@@ -34,7 +36,8 @@ namespace TriangleSort
             Sides = sides;
         }
 
-        
+        #endregion
+
         public static bool IsTriangleExist(double a, double b, double c)
         {
             return (a + b > c && a + c > b && b + c > a);
@@ -59,12 +62,11 @@ namespace TriangleSort
                     }
                 }
 
-
                 return Name == triangle.Name && equal;
             }
 
             throw new InvalidCastException();
         }
-       
+
     }
 }

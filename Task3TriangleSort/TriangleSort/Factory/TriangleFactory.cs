@@ -1,16 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TriangleSort
 {
-    public class TriangleFactory: IFigureFactory
+    public class TriangleFactory : IFigureFactory
     {
-        public string  Name {  get; private set; }
+        #region Properties
+
+        public string Name { get; private set; }
 
         public double[] Sides { get; private set; }
+
+        #endregion
+
+        #region Ctor
 
         public TriangleFactory(string name, double[] sides)
         {
@@ -18,34 +20,35 @@ namespace TriangleSort
             Sides = sides;
         }
 
+        #endregion
+
         public IFigure Create()
         {
-            if(Sides == null)
+            if (Sides == null)
             {
                 throw new InvalidCastException();
             }
 
-           return new Triangle(Name, Sides);
+            return new Triangle(Name, Sides);
         }
 
         bool IFigureFactory.Equals(object obj)
         {
-            if(obj is TriangleFactory factory)
+            if (obj is TriangleFactory factory)
             {
                 bool equal = true;
                 for (int i = 0; i < Sides.Length; i++)
                 {
-                  if(Sides[i] != factory.Sides[i])
-                  {
-                      equal = false;
-                      break;
-                  }
+                    if (Sides[i] != factory.Sides[i])
+                    {
+                        equal = false;
+                        break;
+                    }
                 }
-               
 
-               return Name == factory.Name && equal;
+                return Name == factory.Name && equal;
             }
-            throw new InvalidCastException();           
+            throw new InvalidCastException();
         }
     }
 }

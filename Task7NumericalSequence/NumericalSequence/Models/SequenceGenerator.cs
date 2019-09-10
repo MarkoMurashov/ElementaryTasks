@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
     public class SequenceGenerator
     {
-        public ISequence Sequence { private get; set; }
+        #region Properties
+
+        public ISequence Sequence { get; private set; }
+
+        #endregion
+
+        #region Ctor
 
         public SequenceGenerator(ISequence sequence)
         {
             Sequence = sequence;
         }
+
+        #endregion
 
         public IEnumerable<int> Create()
         {

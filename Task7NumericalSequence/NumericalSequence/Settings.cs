@@ -12,12 +12,12 @@ namespace NumericalSequence
         public const string WRONG_NUMBER_OF_ARGS = "Wrong number of args :(";
 
         public const string NO_MATCH = "No matching";
-     
+
         public const string NULL_ERROR = "null was passed";
 
         #endregion
 
-        #region LOGGER_INGO
+        #region LOGGER_INFO
 
         public const string APP_START = "App was ran";
 

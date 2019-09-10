@@ -9,15 +9,23 @@ namespace TriangleSort
 {
     public class Application
     {
+        #region Properties
+
         private IView View { get; set; }
 
         private ILogger Logger { get; set; }
 
-        public Application(IView view,  ILogger logger)
+        #endregion
+
+        #region Ctor
+
+        public Application(IView view, ILogger logger)
         {
             View = view;
             Logger = logger;
         }
+
+        #endregion
 
         public void Run()
         {
@@ -28,12 +36,13 @@ namespace TriangleSort
             do
             {
                 string args = View.GetStringData(Settings.INVITATION);
+
                 try
                 {
                     IFigureFactory factory = new TriangleParser(args).TryParse();
                     myTriangles.Add(factory.Create());
                 }
-                catch(FormatException ex)
+                catch (FormatException ex)
                 {
                     View.Display(ex.Message);
                     Logger.Error(ex, ex.Message);
@@ -43,7 +52,6 @@ namespace TriangleSort
                     View.Display(ex.Message);
                     Logger.Error(ex, ex.Message);
                 }
-
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
 
             var sortedTriangles = SortBySquare(myTriangles);
@@ -59,9 +67,8 @@ namespace TriangleSort
                 Logger.Info(Settings.APP_SORT);
             }
             else
-            {                
+            {
                 View.Display(Settings.NO_ELEMENTS);
-
                 Logger.Info(Settings.APP_NO_SORT);
             }
 
@@ -74,7 +81,7 @@ namespace TriangleSort
                                   orderby triangle.Square
                                   select triangle;
 
-            return sortedTriangles;           
+            return sortedTriangles;
         }
     }
 }

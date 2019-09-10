@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TriangleSort
 {
     public class TriangleParser : FigureParser
     {
+        #region Ctor 
 
-        public TriangleParser(string  args)
-            :base(args)
+        public TriangleParser(string args)
+            : base(args)
         {
-           
+
         }
 
-                
+        #endregion
+
         public override IFigureFactory TryParse()
         {
             if (!IsCorrectArgs())
@@ -32,7 +30,6 @@ namespace TriangleSort
             }
 
             return new TriangleFactory(name, sides);
-        } 
+        }
     }
 }
- 

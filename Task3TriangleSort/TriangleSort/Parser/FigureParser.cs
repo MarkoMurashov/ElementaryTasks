@@ -1,19 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TriangleSort
 {
     public abstract class FigureParser
     {
+        #region Properties
+
         protected string[] Arguments { get; private set; }
-       
+
+        #endregion
+
+        #region Ctor
+
         public FigureParser(string args)
         {
             Arguments = args.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
         }
+
+        #endregion
 
         public bool IsCorrectArgs()
         {
@@ -30,7 +34,7 @@ namespace TriangleSort
         }
 
         public double[] GetSides()
-        {           
+        {
             double[] sides = new double[Arguments.Length - 1];
             for (int i = 0; i < sides.Length; i++)
             {
@@ -39,9 +43,9 @@ namespace TriangleSort
                 {
                     throw new FormatException(Settings.INCORRECT_INPUT);
                 }
-                if(sides[i] <= 0)
+                if (sides[i] <= 0)
                 {
-                    throw new ArgumentOutOfRangeException(sides[i].ToString(),Settings.NEGATIVE_NUMBER_ERROR);
+                    throw new ArgumentOutOfRangeException(sides[i].ToString(), Settings.NEGATIVE_NUMBER_ERROR);
                 }
             }
 

@@ -1,19 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
     public class CommandLineParser
     {
+        #region Properties
+
         private string[] Arguments { get; set; }
+
+        #endregion
+
+        #region Ctor
 
         public CommandLineParser(string[] args)
         {
             Arguments = args;
         }
+
+        #endregion
 
         public T GetOperation<T>() where T : Enum
         {

@@ -1,19 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NumericalSequence
 {
     public class NumberParser : ISequenceParser
     {
+        #region Properties
+
         private int MaxValue { get; set; }
+
+        #endregion
+
+        #region Ctor
 
         public NumberParser(int maxValue)
         {
             MaxValue = maxValue;
         }
+
+        #endregion
 
         public int Parse(string number)
         {
@@ -32,6 +36,5 @@ namespace NumericalSequence
 
             return num;
         }
-
     }
 }

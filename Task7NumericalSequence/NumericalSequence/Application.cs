@@ -1,5 +1,4 @@
 ﻿using System;
-
 using NLog;
 using ViewController;
 
@@ -7,15 +6,23 @@ namespace NumericalSequence
 {
     public class Application
     {
+        #region Properties
+
         private IView View { get; set; }
 
         private ILogger Logger { get; set; }
+
+        #endregion
+
+        #region Ctor
 
         public Application(IView view, ILogger log)
         {
             View = view;
             Logger = log;
         }
+
+        #endregion
 
         public void Run(string[] args)
         {
@@ -26,7 +33,7 @@ namespace NumericalSequence
             try
             {
                 Operation op = parser.GetOperation<Operation>();
-                    
+
                 switch (op)
                 {
                     case Operation.ShowInstruction:
@@ -53,7 +60,6 @@ namespace NumericalSequence
                 Logger.Error(ex.Message);
             }
 
-
             if (sequence.Length > 0)
             {
                 View.Display(sequence);
@@ -67,14 +73,14 @@ namespace NumericalSequence
             View.Saybye();
         }
 
-        public string  GetQuadratic(string arg)
+        public string GetQuadratic(string arg)
         {
             ISequenceParser sequenceValidation = new NumberParser(Settings.NUMBER_LIMIT);
             int sequenceEnd = sequenceValidation.Parse(arg);
 
             SequenceGenerator sequence = new SequenceGenerator(new QuadraticSequence(sequenceEnd));
 
-            return string.Join(", ", sequence.Create()); 
+            return string.Join(", ", sequence.Create());
         }
     }
 }
