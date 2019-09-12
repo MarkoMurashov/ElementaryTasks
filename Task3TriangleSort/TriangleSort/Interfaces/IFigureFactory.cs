@@ -9,7 +9,5 @@ namespace TriangleSort
     public interface IFigureFactory
     {
         IFigure Create();
-
-        bool Equals(object obj);
     }
 }

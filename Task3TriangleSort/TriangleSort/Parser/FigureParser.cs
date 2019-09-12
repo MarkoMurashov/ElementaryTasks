@@ -19,12 +19,12 @@ namespace TriangleSort
 
         #endregion
 
-        public bool IsCorrectArgs()
+        public virtual bool IsCorrectArgs()
         {
             return Arguments.Length == Settings.SIDES_NUMBER + 1;
         }
 
-        public string GetName()
+        public virtual string GetName()
         {
             if (Arguments.Length > 0)
             {
@@ -33,7 +33,7 @@ namespace TriangleSort
             throw new ArgumentException(Settings.WRONG_NUMBER_OF_ARGS);
         }
 
-        public double[] GetSides()
+        public virtual double[] GetSides()
         {
             double[] sides = new double[Arguments.Length - 1];
             for (int i = 0; i < sides.Length; i++)

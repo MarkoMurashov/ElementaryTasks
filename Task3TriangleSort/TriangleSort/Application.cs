@@ -31,7 +31,7 @@ namespace TriangleSort
         {
             Logger.Info(Settings.APP_START);
 
-            List<IFigure> myTriangles = new List<IFigure>();
+            var myTriangles = new List<IFigure>();
 
             do
             {
@@ -39,7 +39,7 @@ namespace TriangleSort
 
                 try
                 {
-                    IFigureFactory factory = new TriangleParser(args).TryParse();
+                    var factory = new TriangleParser(args).TryParse();
                     myTriangles.Add(factory.Create());
                 }
                 catch (FormatException ex)
@@ -54,7 +54,7 @@ namespace TriangleSort
                 }
             } while (View.ContinueWork(Settings.CONTINUATION_STRING));
 
-            var sortedTriangles = SortBySquare(myTriangles);
+            var sortedTriangles = myTriangles.OrderBy( t => t.Area );
 
             if (sortedTriangles.Count() != 0)
             {
@@ -75,13 +75,6 @@ namespace TriangleSort
             View.Saybye();
         }
 
-        public IOrderedEnumerable<IFigure> SortBySquare(IEnumerable<IFigure> myTriangles)
-        {
-            var sortedTriangles = from triangle in myTriangles
-                                  orderby triangle.Square
-                                  select triangle;
-
-            return sortedTriangles;
-        }
+     
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 
 using Xunit;
+using Moq;
 using TriangleSort;
 
 namespace TriangleSortTests
@@ -17,15 +18,15 @@ namespace TriangleSortTests
         [InlineData("second, 4 4, 4", "second")]
         public void GetNameTest(string args, string expected)
         {
+            //arrange
+            var mockFigureParser = new Mock<FigureParser>(MockBehavior.Default, args);
+            mockFigureParser.Setup(a => a.GetName()).Returns(expected);
 
-            ////arrange
-            FigureParser figureParser = new TriangleParser(args);
+            //act
+            var actual = mockFigureParser.Object;
 
-            ////act
-            string actual = figureParser.GetName();
-
-            ////assert
-            Assert.True(expected == actual);            
+            //assert
+            Assert.True(expected == actual.GetName());            
         }
 
         [Theory]
@@ -34,24 +35,29 @@ namespace TriangleSortTests
         public void GetSidesTest(string args, double[] expected)
         {
             //arrange
-            FigureParser figureParser = new TriangleParser(args);
+            var mockFigureParser = new Mock<FigureParser>(MockBehavior.Default, args);
+            mockFigureParser.Setup(a => a.GetSides()).Returns(expected);
+
+            //act
+            var actual = mockFigureParser.Object;
 
             //assert
-            double[] actual = figureParser.GetSides();
-
-            //assert
-            Assert.Equal(expected, actual);
+            Assert.Equal(expected, actual.GetSides());
         }
 
         [Fact]
         public void GetNameTest_ThrowArgumentExpeption()
         {
             //arrange
-            FigureParser figureParser = new TriangleParser("");
+            var mockFigureParser = new Mock<FigureParser>(MockBehavior.Default, string.Empty);
+            mockFigureParser.Setup(a => a.GetName()).Throws(new ArgumentException());
+
+            //act
+            var actual = mockFigureParser.Object;
 
             //assert
             Assert.Throws<ArgumentException>(()
-                => figureParser.GetName());
+                => actual.GetName());
 
         }
 
@@ -61,11 +67,15 @@ namespace TriangleSortTests
         public void GetSidesTest_ThrowArgumentOutOfRangeExp(string args)
         {
             //arrange
-            FigureParser figureParser = new TriangleParser(args);
+            var mockFigureParser = new Mock<FigureParser>(MockBehavior.Default, args);
+            mockFigureParser.Setup(a => a.GetSides()).Throws(new ArgumentOutOfRangeException());
+
+            //act
+            var actual = mockFigureParser.Object;
 
             //assert
             Assert.Throws<ArgumentOutOfRangeException>(()
-                => figureParser.GetSides());
+                => actual.GetSides());
         }
 
         [Theory]
@@ -74,11 +84,15 @@ namespace TriangleSortTests
         public void GetSidesTest_ThrowExeption(string args)
         {
             //arrange
-            FigureParser figureParser = new TriangleParser(args);
+            var mockFigureParser = new Mock<FigureParser>(MockBehavior.Default, args);
+            mockFigureParser.Setup(a => a.GetSides()).Throws(new FormatException());
+
+            //act
+            var actual = mockFigureParser.Object;
 
             //assert
             Assert.Throws<FormatException>(()
-                => figureParser.GetSides());
+                => actual.GetSides());
         }
 
     }

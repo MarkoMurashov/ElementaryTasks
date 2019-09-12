@@ -8,47 +8,26 @@ namespace TriangleSort
 
         public string Name { get; private set; }
 
-        public double[] Sides { get; private set; }
+        private double[] _sides = new double[3];
 
         #endregion
 
         #region Ctor
 
-        public TriangleFactory(string name, double[] sides)
+        public TriangleFactory(string name, double firstSide, double secondSide, double thirddSide)
         {
             Name = name;
-            Sides = sides;
+            _sides[0] = firstSide;
+            _sides[1] = secondSide;
+            _sides[2] = thirddSide;
         }
 
         #endregion
 
         public IFigure Create()
         {
-            if (Sides == null)
-            {
-                throw new InvalidCastException();
-            }
-
-            return new Triangle(Name, Sides);
+            return new Triangle(Name, _sides[0], _sides[1], _sides[2]);
         }
-
-        bool IFigureFactory.Equals(object obj)
-        {
-            if (obj is TriangleFactory factory)
-            {
-                bool equal = true;
-                for (int i = 0; i < Sides.Length; i++)
-                {
-                    if (Sides[i] != factory.Sides[i])
-                    {
-                        equal = false;
-                        break;
-                    }
-                }
-
-                return Name == factory.Name && equal;
-            }
-            throw new InvalidCastException();
-        }
+     
     }
 }

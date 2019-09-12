@@ -8,16 +8,17 @@ namespace TriangleSort
         #region Properties
 
         public string Name { get; private set; }
-        public double[] Sides { get; private set; }
 
-        public double Square
+        private double[] _sides = new double[3];
+        
+        public double Area
         {
             get
             {
-                double halfPerimeter = Sides.Sum() / 2.0;
+                double halfPerimeter = _sides.Sum() / 2.0;
 
                 double tmp = 1;
-                foreach (var side in Sides)
+                foreach (var side in _sides)
                 {
                     tmp *= halfPerimeter - side;
                 }
@@ -30,43 +31,28 @@ namespace TriangleSort
 
         #region Ctor
 
-        public Triangle(string name, double[] sides)
+        public Triangle(string name, double firstSide, double secondSide, double thirddSide)
         {
             Name = name;
-            Sides = sides;
+            _sides[0] = firstSide;
+            _sides[1] = secondSide;
+            _sides[2] = thirddSide;
+
         }
 
         #endregion
 
-        public static bool IsTriangleExist(double a, double b, double c)
+        public static bool IsTriangleExist(double firstSide, double secondSide, double thirddSide)
         {
-            return (a + b > c && a + c > b && b + c > a);
+            return (firstSide + secondSide > thirddSide && 
+                firstSide + thirddSide > secondSide && secondSide + thirddSide > firstSide);
         }
 
         public override string ToString()
         {
-            return string.Format($"[{Name}]: {Square} cm");
+            return string.Format($"[{Name}]: {Area} cm");
         }
-
-        bool IFigure.Equals(object obj)
-        {
-            if (obj is Triangle triangle)
-            {
-                bool equal = true;
-                for (int i = 0; i < Sides.Length; i++)
-                {
-                    if (Sides[i] != triangle.Sides[i])
-                    {
-                        equal = false;
-                        break;
-                    }
-                }
-
-                return Name == triangle.Name && equal;
-            }
-
-            throw new InvalidCastException();
-        }
+   
 
     }
 }

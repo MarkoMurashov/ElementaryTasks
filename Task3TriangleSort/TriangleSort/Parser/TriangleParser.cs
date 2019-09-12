@@ -29,7 +29,7 @@ namespace TriangleSort
                 throw new ArgumentException(Settings.NOT_EXIST);
             }
 
-            return new TriangleFactory(name, sides);
+            return new TriangleFactory(name, sides[0], sides[1], sides[2]);
         }
     }
 }

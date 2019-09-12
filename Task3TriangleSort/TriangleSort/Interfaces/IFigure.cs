@@ -9,9 +9,7 @@ namespace TriangleSort
     public interface IFigure
     {
         string Name { get; }
-        double[] Sides { get; }
-        double Square { get; }
+        double Area { get; }
 
-        bool Equals(object obj);
     }
 }
