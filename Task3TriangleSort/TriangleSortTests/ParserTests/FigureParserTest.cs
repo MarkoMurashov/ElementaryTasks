@@ -9,7 +9,7 @@ using TriangleSort;
 namespace TriangleSortTests
 {
 
-    public class FigureParserTest 
+    public class FigureParserTest
     {
 
 

@@ -14,21 +14,17 @@ namespace TriangleSortTests
         public void CreateTest()
         {
             //arrange
-            var mockFigure = new Mock<IFigure>();
-            mockFigure.Setup(a => a.Area).Returns(0);
-            mockFigure.Setup(a => a.Name).Returns("default");
-
+            var mockFigure = new Mock<IFigure>();           
             IFigure expected = mockFigure.Object;
                        
             var mockFactory = new Mock<IFigureFactory>();
-            mockFactory.Setup(m => m.Create()).Returns(mockFigure.Object);
+            mockFactory.Setup(m => m.Create()).Returns(expected);
 
             //act
             IFigureFactory factory = mockFactory.Object;
-            var actual = factory.Create();
 
             //assert
-            Assert.True(expected.Name == actual.Name && expected.Area == actual.Area);
+            Assert.True(expected == factory.Create());
         }
       
     }

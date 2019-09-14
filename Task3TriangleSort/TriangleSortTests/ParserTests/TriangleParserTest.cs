@@ -14,17 +14,13 @@ namespace TriangleSortTests
         [InlineData("second 444 4.9, 4")]
         [InlineData("")]
         public void TryParseTest_ThrowExeption(string args)
-        { 
+        {
             //arrange
-            var mockFigureParser = new Mock<TriangleParser>(MockBehavior.Default, args);
-            mockFigureParser.Setup(a => a.TryParse()).Throws(new ArgumentException());
-
-            //act
-            var actual = mockFigureParser.Object;
-          
+            var triangleParser = new TriangleParser(args);
+                     
             //assert
             Assert.Throws<ArgumentException>(()
-                => actual.TryParse());
+                => triangleParser.TryParse());
         }
 
         [Theory]
@@ -32,6 +28,7 @@ namespace TriangleSortTests
         [InlineData("second 49, 46, 47", "second", new double[] { 49, 46, 47 })]        
         public void TryParseTest(string args, string expectedName, double[] expectedSides)
         {
+
             var mockFactory = new Mock<TriangleFactory>(MockBehavior.Default,
                 expectedName, expectedSides[0], expectedSides[1], expectedSides[2]);
             var triangleFactory = mockFactory.Object;

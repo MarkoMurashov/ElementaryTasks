@@ -8,7 +8,6 @@ using TriangleSort;
 namespace TriangleSortTests
 {
       
-
     public class TriangleTest
     {
 
@@ -20,7 +19,7 @@ namespace TriangleSortTests
         {
             //arrange
             const string triangleName = "default";            
-            Triangle triangle = new Triangle(triangleName, sides[0], sides[1], sides[2]);
+            var triangle = new Triangle(triangleName, sides[0], sides[1], sides[2]);
             
             //act
             double actual = triangle.Area;

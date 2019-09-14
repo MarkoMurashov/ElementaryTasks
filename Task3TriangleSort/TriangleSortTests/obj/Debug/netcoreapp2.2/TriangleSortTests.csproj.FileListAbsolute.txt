@@ -19,3 +19,5 @@ C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\obj\
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\obj\Debug\netcoreapp2.2\TriangleSortTests.dll
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\obj\Debug\netcoreapp2.2\TriangleSortTests.pdb
 C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\bin\Debug\netcoreapp2.2\NLog.config
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\bin\Debug\netcoreapp2.2\NLog.dll
+C:\Users\Lenovo\Desktop\ElementaryTasks\Task3TriangleSort\TriangleSortTests\bin\Debug\netcoreapp2.2\NLog.xml

@@ -59,9 +59,13 @@
               "target": "Package",
               "version": "[4.13.0, )"
             },
-            "NLog.Config": {
+            "OpenCover": {
               "target": "Package",
-              "version": "[4.6.7, )"
+              "version": "[4.7.922, )"
+            },
+            "ReportGenerator": {
+              "target": "Package",
+              "version": "[4.2.19, )"
             },
             "xunit": {
               "target": "Package",

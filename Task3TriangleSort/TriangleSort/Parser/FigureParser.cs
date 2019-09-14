@@ -19,7 +19,7 @@ namespace TriangleSort
 
         #endregion
 
-        public virtual bool IsCorrectArgs()
+        protected bool IsCorrectArgs()
         {
             return Arguments.Length == Settings.SIDES_NUMBER + 1;
         }

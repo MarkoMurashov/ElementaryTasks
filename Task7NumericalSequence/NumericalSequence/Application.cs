@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using NLog;
 using ViewController;
 
@@ -73,7 +74,7 @@ namespace NumericalSequence
             View.Saybye();
         }
 
-        public string GetQuadratic(string arg)
+        public static string GetQuadratic(string arg)
         {
             ISequenceParser sequenceValidation = new NumberParser(Settings.NUMBER_LIMIT);
             int sequenceEnd = sequenceValidation.Parse(arg);

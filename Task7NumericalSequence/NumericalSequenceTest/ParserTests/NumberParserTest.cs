@@ -5,16 +5,21 @@ using NumericalSequence;
 
 namespace NumericalSequenceTest
 {
-    public class NumberParserTest
+    public class NumberParserTest: IClassFixture<NumberParserFixture>
     {
+        private readonly NumberParserFixture Sequnce;
+
+        public NumberParserTest(NumberParserFixture sequence)
+        {
+            Sequnce = sequence;
+        }
+       
         [Theory]
         [InlineData("15", 15)]
         [InlineData("268",268)]
         public void ParseTest(string str, int expected)
         {
-            ISequenceParser parser = new NumberParser(1000);
-
-            var actual = parser.Parse(str);
+            var actual = Sequnce.SequenceFixture.Parse(str);
 
             Assert.Equal(expected, actual);
         }
@@ -24,21 +29,17 @@ namespace NumericalSequenceTest
         [InlineData("10000")]
         public void ParseTest_ThrowExp(string str)
         {
-            ISequenceParser parser = new NumberParser(1000);
-
             Assert.Throws<ArgumentOutOfRangeException>(()
-                => parser.Parse(str));
+                => Sequnce.SequenceFixture.Parse(str));
         }
 
         [Theory]
         [InlineData("daaaaaaaaaaaaaaaaaa")]
         [InlineData("10!!!000")]
         public void ParseTest_ThrowFormatExp(string str)
-        {
-            ISequenceParser parser = new NumberParser(1000);
-
+        {           
             Assert.Throws<FormatException>(()
-                => parser.Parse(str));
+                => Sequnce.SequenceFixture.Parse(str));
         }
     }
 }
