@@ -15,7 +15,7 @@ namespace TriangleSortTests
         [InlineData(new double[] {4, 4, 4}, 6.9)]
         [InlineData(new double[] { 4.6, 8.9, 11 }, 19.8)]
         [InlineData(new double[] { 8, 10, 4 }, 15.2)]
-        public void test_Area_withThreeTriangleSides_ReturnExpectedArea(double[] sides,  double expected)
+        public void Area_withThreeTriangleSides_ReturnExpectedArea(double[] sides,  double expected)
         {
             //arrange
             const string triangleName = "default";            

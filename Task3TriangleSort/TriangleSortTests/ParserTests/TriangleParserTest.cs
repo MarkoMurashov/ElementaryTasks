@@ -11,9 +11,9 @@ namespace TriangleSortTests
     {
         [Theory]
         [InlineData("first 4, 4")]
-        [InlineData("second 444 4.9, 4")]
+        [InlineData("second 444 4.9, 4 9 9")]
         [InlineData("")]
-        public void TryParseTest_ThrowExeption(string args)
+        public void TryParse_ShouldThrowArgumentExeption_When_WrongArgumentNumber(string args)
         {
             //arrange
             var triangleParser = new TriangleParser(args);
@@ -24,20 +24,15 @@ namespace TriangleSortTests
         }
 
         [Theory]
-        [InlineData("first 4, 4, 4", "first", new double[] { 4, 4, 4 })]
-        [InlineData("second 49, 46, 47", "second", new double[] { 49, 46, 47 })]        
-        public void TryParseTest(string args, string expectedName, double[] expectedSides)
+        [InlineData("first 4, 4, 4")]
+        [InlineData("second 49, 46, 47")]        
+        public void TryParse_WithTriangleDate_ShouldReturnIFigureFactory(string args)
         {
 
-            var mockFactory = new Mock<TriangleFactory>(MockBehavior.Default,
-                expectedName, expectedSides[0], expectedSides[1], expectedSides[2]);
-            var triangleFactory = mockFactory.Object;
-            
-            var mockFigureParser = new Mock<TriangleParser>(MockBehavior.Default, args);
-            mockFigureParser.Setup(a => a.TryParse()).Returns(triangleFactory);
-          
+            var parser = new TriangleParser(args);
+
             //assert
-            Assert.True(triangleFactory == mockFigureParser.Object.TryParse());
+            Assert.IsAssignableFrom<IFigureFactory>(parser.TryParse());
         }
        
     }

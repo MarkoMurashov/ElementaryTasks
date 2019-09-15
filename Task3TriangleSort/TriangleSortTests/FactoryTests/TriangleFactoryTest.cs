@@ -10,21 +10,15 @@ namespace TriangleSortTests
 {
     public class TriangleFactoryTest
     {
-        [Fact]
-        public void CreateTest()
+        [Theory]
+        [InlineData("lala", new double[] { 6, 3, 4 })]
+        [InlineData("alal", new double[] { 5, 4, 6 })]
+        public void Create_ShouldReturnIFigure(string name, double[] sides)
         {
-            //arrange
-            var mockFigure = new Mock<IFigure>();           
-            IFigure expected = mockFigure.Object;
-                       
-            var mockFactory = new Mock<IFigureFactory>();
-            mockFactory.Setup(m => m.Create()).Returns(expected);
-
-            //act
-            IFigureFactory factory = mockFactory.Object;
-
+            var factory = new TriangleFactory(name, sides[0], sides[1], sides[2]);
+            
             //assert
-            Assert.True(expected == factory.Create());
+            Assert.IsAssignableFrom<IFigure>(factory.Create());
         }
       
     }
