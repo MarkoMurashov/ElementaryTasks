@@ -9,7 +9,7 @@ namespace NumericalSequenceTest
         [Theory]
         [InlineData(new string[] { }, Operation.ShowInstruction)]
         [InlineData(new string[] { "1" },Operation.Quadtratic)]
-        public void GetOperationTest(string[] args, Operation expected)
+        public void GetOperation_WithArgumentsNumber_ShouldReturnOperarionType(string[] args, Operation expected)
         {
             var parser = new CommandLineParser(args);
 
@@ -19,7 +19,7 @@ namespace NumericalSequenceTest
         }
 
         [Fact]
-        public void GetOperationTest_ThrowExp()
+        public void GetOperation_ShouldThrowFormatExp_When_WrongArgumentsNumber()
         {
             var parser = new CommandLineParser(new string[] { "1", "2", "3" });
 

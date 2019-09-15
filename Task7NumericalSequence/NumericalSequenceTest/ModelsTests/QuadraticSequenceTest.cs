@@ -9,7 +9,7 @@ namespace NumericalSequenceTest
     {
         [Theory]
         [MemberData(nameof(ArgumentsSequence))]
-        public void GenerateSequenceTest(int end, IEnumerable<int> expected)
+        public void GenerateSequenc_WithSequenceEndNumber_ShouldReturnSequence(int end, IEnumerable<int> expected)
         {
             var sequence = new QuadraticSequence(end);
 
